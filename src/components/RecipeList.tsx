@@ -1,18 +1,26 @@
-import React, {useEffect } from 'react';
-import {useDispatch} from "react-redux";
-import {requestFetchRecipes} from "../actions/recipes";
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 
-interface Props {
-}
+import { requestFetchRecipes } from '../actions/recipes';
+import { State } from '../reducers';
+import Item from 'components/Item';
+
+interface Props {}
 
 const RecipeList: React.FC<Props> = props => {
-  const dispatch = useDispatch();
+    const dispatch = useDispatch();
+    const recipes = useSelector((state: State) => state.recipes.data);
 
-  useEffect(() => {
-    dispatch(requestFetchRecipes())
-  }, [dispatch])
+    useEffect(() => {
+        dispatch(requestFetchRecipes());
+    }, [dispatch]);
 
-  return (<div></div>);
+    console.log(recipes);
+    return (
+      <div>
+        {recipes.map(recipe => <Item {...recipe} key={recipe.id} />)}
+      </div>
+    );
 };
 
 export default RecipeList;
