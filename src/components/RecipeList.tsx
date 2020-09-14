@@ -6,6 +6,8 @@ import { requestFetchRecipes } from "../actions/recipes";
 import { State } from "../reducers";
 import Item from "components/Item/Item";
 import Loading from "components/Loading";
+import { RECIPES_DETAIL } from "../routes/routes";
+import {useHistory} from "react-router";
 
 interface Props {}
 
@@ -18,6 +20,7 @@ const RecipeList: React.FC<Props> = () => {
         () => dispatch(requestFetchRecipes()),
         [dispatch]
     );
+    const history = useHistory();
 
     useEffect(() => {
         dispatchFetchRequest();
@@ -33,7 +36,14 @@ const RecipeList: React.FC<Props> = () => {
                 next={dispatchFetchRequest}
             >
                 {recipes.map(recipe => (
-                    <Item {...recipe} key={recipe.id} />
+                    <Item
+                        {...recipe}
+                        key={recipe.id}
+                        onClick={e => {
+                            e.preventDefault();
+                            history.push(RECIPES_DETAIL(recipe.id));
+                        }}
+                    />
                 ))}
             </InfiniteScroll>
         </div>
