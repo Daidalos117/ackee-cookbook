@@ -17,7 +17,7 @@ const Item: React.FC<P> = ({ name, duration, score }) => {
         <StyledItem>
             <Box position="relative" width={96} height={96}>
                 <img src="http://placekitten.com/g/96/96" onLoad={() => setImgLoaded(true)} />
-                {!imgLoaded && <Loading absolute={true}/>}
+                {!imgLoaded && <Loading absolute />}
             </Box>
             <ItemContent>
                 <Typography variant="h6">{name}</Typography>
