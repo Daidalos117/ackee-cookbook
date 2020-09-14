@@ -1,13 +1,25 @@
 import React from 'react';
 import CircularProgress from '@material-ui/core/CircularProgress';
-import Box from '@material-ui/core/Box';
+import Box, {BoxProps} from '@material-ui/core/Box';
 
 interface Props {
-  height?: string;
+  absolute?: boolean;
 }
 
-const Loading: React.FC<Props> = props => (
-    <Box display="flex" alignItems="center" justifyContent="center" height='100vh' {...props}>
+const absoluteStyles = {
+  position: 'absolute',
+  left: 0,
+  top: 0,
+  zIndex: 2,
+  width: "100%",
+  height:"100%"
+};
+
+
+const Loading: React.FC<BoxProps & Props> = ({absolute, ...boxProps}) => (
+    <Box display="flex" alignItems="center" justifyContent="center" height='100vh'
+         {...(absolute && absoluteStyles)}
+         {...boxProps}>
         <CircularProgress />
     </Box>
 );
