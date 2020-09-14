@@ -1,10 +1,18 @@
-import React from 'react';
+import React, {useEffect } from 'react';
+import {useDispatch} from "react-redux";
+import {requestFetchRecipes} from "../actions/recipes";
 
 interface Props {
 }
 
-const Component: React.FC<Props> = props => {
+const RecipeList: React.FC<Props> = props => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(requestFetchRecipes())
+  }, [dispatch])
+
   return (<div></div>);
 };
 
-export default Component;
+export default RecipeList;

@@ -8,6 +8,7 @@ import AddIcon from '@material-ui/icons/Add';
 import { Link } from 'react-router-dom';
 
 import { RECIPES_NEW } from '../routes/routes';
+import RecipeList from 'components/RecipeList';
 
 interface Props {}
 
@@ -23,7 +24,7 @@ const Recipes: React.FC<Props> = () => {
                 </Toolbar>
             </AppBar>
             <Container>
-
+                <RecipeList />
             </Container>
         </>
     );
