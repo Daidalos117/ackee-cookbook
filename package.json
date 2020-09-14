@@ -52,5 +52,9 @@
   },
   "devDependencies": {
     "redux-devtools-extension": "^2.13.8"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "tabWidth": 4
   }
 }
