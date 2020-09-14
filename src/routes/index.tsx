@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
 import Recipes from 'pages/Recipes';
-import { RECIPES_NEW, RECIPES } from './routes';
+import { RECIPES } from './routes';
 
 interface Props {}
 

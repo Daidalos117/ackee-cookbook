@@ -18,7 +18,7 @@ const Item: React.FC<P> = ({ name, duration, score }) => {
     return (
         <StyledItem>
             <Box position="relative" width={96} height={96}>
-                <img src="https://picsum.photos/96/96" onLoad={() => setImgLoaded(true)} />
+                <img src="https://picsum.photos/96/96" alt={name} onLoad={() => setImgLoaded(true)} />
                 {!imgLoaded && <Loading absolute />}
             </Box>
             <ItemContent>

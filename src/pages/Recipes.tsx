@@ -6,17 +6,22 @@ import Button from '@material-ui/core/Button';
 import Container from '@material-ui/core/Container';
 import AddIcon from '@material-ui/icons/Add';
 import Box from '@material-ui/core/Box';
+import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 import { RECIPES_NEW } from '../routes/routes';
 import RecipeList from 'components/RecipeList';
+
+const StyledContainer = styled(Container)`
+  margin-top: 56px;
+`
 
 interface Props {}
 
 const Recipes: React.FC<Props> = () => {
     return (
         <>
-            <AppBar position="static" color="default">
+            <AppBar position="fixed" color="default">
                 <Toolbar>
                     <Box display="flex" justifyContent="space-between" width="100%">
                         <Typography variant="h6">Recepty</Typography>
@@ -28,9 +33,11 @@ const Recipes: React.FC<Props> = () => {
                     </Box>
                 </Toolbar>
             </AppBar>
-            <Container>
-                <RecipeList />
-            </Container>
+            <StyledContainer>
+                <Container>
+                    <RecipeList />
+                </Container>
+            </StyledContainer>
         </>
     );
 };

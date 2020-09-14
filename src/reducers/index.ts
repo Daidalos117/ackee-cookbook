@@ -1,4 +1,4 @@
-import { combineReducers, CombinedState } from 'redux';
+import { combineReducers } from 'redux';
 import recipes, {RecipesState} from 'reducers/recipes';
 
 export type State = {

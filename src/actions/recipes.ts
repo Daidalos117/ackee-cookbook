@@ -11,6 +11,7 @@ interface FetchRequestAction {
 interface FetchSuccessAction {
     type: typeof FETCH_RECIPES_SUCCESS;
     data: Recipes;
+    hasMore: boolean;
 }
 
 interface FetchErrorAction {
@@ -23,4 +24,3 @@ export type RecipesActionTypes = FetchRequestAction | FetchSuccessAction | Fetch
 export const requestFetchRecipes = () => ({
     type: FETCH_RECIPES_REQUESTED
 });
-
