@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import { requestFetchRecipes } from '../actions/recipes';
 import { State } from '../reducers';
-import Item from 'components/Item';
+import Item from 'components/Item/Item';
 
 interface Props {}
 
