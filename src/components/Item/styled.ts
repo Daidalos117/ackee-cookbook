@@ -11,3 +11,7 @@ export const ItemContent = styled.div`
   padding-left: 18px;
   flex: 1;
 `;
+
+export const ItemDuration = styled.div`
+  font-size: 15px;
+`

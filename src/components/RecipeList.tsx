@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-
 import { requestFetchRecipes } from '../actions/recipes';
 import { State } from '../reducers';
 import Item from 'components/Item/Item';
