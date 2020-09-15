@@ -4,7 +4,7 @@ import Box from '@material-ui/core/Box';
 import Rating from '@material-ui/lab/Rating';
 import Schedule from '@material-ui/icons/Schedule';
 
-import { Recipe } from 'types/recipes';
+import { Recipe } from 'general/recipes';
 import { StyledItem, ItemContent, ItemDuration } from './styled';
 import Loading from '../Loading';
 

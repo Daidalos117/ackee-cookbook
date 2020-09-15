@@ -1,4 +1,4 @@
-import { Recipes } from '../types/recipes';
+import { Recipes } from '../general/recipes';
 
 export const FETCH_RECIPES_REQUESTED = 'FETCH_RECIPES_REQUESTED';
 export const FETCH_RECIPES_SUCCESS = 'FETCH_RECIPES_SUCCESS';
@@ -21,6 +21,6 @@ interface FetchErrorAction {
 
 export type RecipesActionTypes = FetchRequestAction | FetchSuccessAction | FetchErrorAction;
 
-export const requestFetchRecipes = () => ({
+export const fetchRecipesRequest = () => ({
     type: FETCH_RECIPES_REQUESTED
 });

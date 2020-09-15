@@ -1,5 +1,5 @@
 import { FETCH_RECIPES_SUCCESS, FETCH_RECIPES_ERROR, FETCH_RECIPES_REQUESTED } from '../actions/recipes';
-import { Recipes } from '../types/recipes';
+import { Recipes } from '../general/recipes';
 import { RecipesActionTypes } from '../actions/recipes';
 
 export interface RecipesState {

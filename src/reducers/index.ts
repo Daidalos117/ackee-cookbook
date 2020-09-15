@@ -1,13 +1,15 @@
-import { combineReducers } from 'redux';
-import recipes, {RecipesState} from 'reducers/recipes';
+import { combineReducers } from "redux";
+import recipes, { RecipesState } from "reducers/recipes";
+import recipe, { RecipeState } from "reducers/recipe";
 
 export type State = {
-  recipes: RecipesState
-}
+    recipes: RecipesState;
+    recipe: RecipeState;
+};
 
 const rootReducer = combineReducers({
-  recipes,
-
+    recipes,
+    recipe
 });
 
 export default rootReducer;

@@ -6,3 +6,10 @@ export interface Recipe {
 }
 
 export type Recipes = Recipe[];
+
+export interface RecipeDetail extends Recipe {
+  description: string;
+  ingredients: string[];
+  info: string;
+
+}

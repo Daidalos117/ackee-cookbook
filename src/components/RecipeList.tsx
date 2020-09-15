@@ -2,7 +2,7 @@ import React, { useCallback, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import InfiniteScroll from "react-infinite-scroll-component";
 
-import { requestFetchRecipes } from "../actions/recipes";
+import { fetchRecipesRequest } from "../actions/recipes";
 import { State } from "../reducers";
 import Item from "components/Item/Item";
 import Loading from "components/Loading";
@@ -17,7 +17,7 @@ const RecipeList: React.FC<Props> = () => {
     const isLoading = useSelector((state: State) => state.recipes.isLoading);
     const hasMore = useSelector((state: State) => state.recipes.hasMore);
     const dispatchFetchRequest = useCallback(
-        () => dispatch(requestFetchRecipes()),
+        () => dispatch(fetchRecipesRequest()),
         [dispatch]
     );
     const history = useHistory();

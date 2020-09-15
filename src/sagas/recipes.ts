@@ -1,4 +1,4 @@
-import { Action } from 'redux';
+import {RecipesActionTypes} from "../actions/recipes";
 import { put, call, select } from 'redux-saga/effects';
 import api from 'api/';
 
@@ -8,11 +8,11 @@ import { State } from '../reducers';
 
 export const RECIPES_PAGE_LENGTH = 5;
 
-export function* fetchRecipes(action: Action) {
+export function* fetchRecipes(action: RecipesActionTypes) {
     let page = yield select((state: State) => state.recipes.page);
 
     try {
-        const recipes = yield call(
+        const response = yield call(
             url =>
                 api.get(url, {
                     params: {
@@ -22,7 +22,7 @@ export function* fetchRecipes(action: Action) {
                 }),
             RECIPES
         );
-        const { data } = recipes;
+        const { data } = response;
         const hasMore = data.length === RECIPES_PAGE_LENGTH;
         yield put({ type: FETCH_RECIPES_SUCCESS, data: data, hasMore});
     } catch (e) {
