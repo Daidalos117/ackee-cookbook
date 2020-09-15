@@ -40,7 +40,7 @@ const RecipeDetail: React.FC<Props> = () => {
             </MenuBar>
             <Header
                 name={recipe.name}
-                score={parseFloat(recipe.score)}
+                score={parseFloat(`${recipe.score}`)}
                 duration={recipe.duration}
                 isLoading={isLoading}
             />

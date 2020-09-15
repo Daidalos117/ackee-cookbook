@@ -20,52 +20,52 @@ interface Props {
 const Header: React.FC<Props> = ({ name, duration, score, isLoading }) => {
     const theme = useTheme();
 
-    return(
-    <StyledHeader>
-      <img src={headerBg} alt="Recipe Header BG" className="bg" />
-      <div className="inner">
-        <Container>
-          <Typography variant="h4" className="heading" >
-            {isLoading ? (
-              <Skeleton
-                variant="rect"
-                width={210}
-                height={30}
-                animation="wave"
-              />
-            ) : (
-              name
-            )}
-          </Typography>
-        </Container>
+    return (
+        <StyledHeader>
+            <img src={headerBg} alt="Recipe Header BG" className="bg" />
+            <div className="inner">
+                <Container>
+                    <Typography variant="h4" className="heading">
+                        {isLoading ? (
+                            <Skeleton
+                                variant="rect"
+                                width={210}
+                                height={30}
+                                animation="wave"
+                            />
+                        ) : (
+                            name
+                        )}
+                    </Typography>
+                </Container>
 
-        <div className="bottom-bar">
-          <Container>
-            <Box display="flex" justifyContent="space-between">
-              <div>
-                <Rating value={score} readOnly />
-              </div>
-              <Box textAlign="right">
-                {isLoading ? (
-                  <Skeleton
-                    variant="rect"
-                    width={30}
-                    height={20}
-                    animation="wave"
-                  />
-                ) : (
-                  <Duration
-                    color={theme.palette.text.secondary}
-                    duration={duration || 0}
-                  />
-                )}
-              </Box>
-            </Box>
-          </Container>
-        </div>
-      </div>
-    </StyledHeader>
-  );
-}
+                <div className="bottom-bar">
+                    <Container>
+                        <Box display="flex" justifyContent="space-between">
+                            <div>
+                                <Rating value={score} readOnly />
+                            </div>
+                            <Box textAlign="right">
+                                {isLoading ? (
+                                    <Skeleton
+                                        variant="rect"
+                                        width={30}
+                                        height={20}
+                                        animation="wave"
+                                    />
+                                ) : (
+                                    <Duration
+                                        color={theme.palette.text.secondary}
+                                        duration={duration || 0}
+                                    />
+                                )}
+                            </Box>
+                        </Box>
+                    </Container>
+                </div>
+            </div>
+        </StyledHeader>
+    );
+};
 
 export default Header;
