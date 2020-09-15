@@ -24,7 +24,7 @@ const RecipeList: React.FC<Props> = () => {
     const history = useHistory();
 
     useEffect(() => {
-        dispatchFetchRequest();
+        //dispatchFetchRequest();
     }, [dispatchFetchRequest]);
 
     return (

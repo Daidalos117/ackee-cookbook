@@ -6,9 +6,11 @@ import {
     FETCH_RECIPE_ERROR,
     FETCH_RECIPE_SUCCESS,
     RATE_RECIPE_ERROR,
-    RATE_RECIPE_SUCCESS
+    RATE_RECIPE_SUCCESS,
+    RATE_LOAD_SUCCESS
 } from "../actions/recipe";
 import { RECIPE, RATE_RECIPE } from "../api/routes";
+import { addRating, getRating } from "general/helpers";
 
 export function* fetchRecipe(action: RecipeActionTypes) {
     if (!("id" in action)) {
@@ -57,9 +59,24 @@ export function* rateRecipe(action: RecipeActionTypes) {
             RATE_RECIPE(id)
         );
         const { data } = response;
+        const { score: serverScore } = data;
 
-        yield put({ type: RATE_RECIPE_SUCCESS, score: data.score });
+        addRating({
+            id,
+            score: serverScore
+        });
+
+        yield put({ type: RATE_RECIPE_SUCCESS, score: serverScore });
     } catch (e) {
         yield put({ type: RATE_RECIPE_ERROR, message: e.message });
     }
+}
+
+export function* loadRecipeRate(action: RecipeActionTypes) {
+    if (!("id" in action)) {
+        return put({ type: RATE_LOAD_SUCCESS, score: null });
+    }
+
+    const rating = getRating(action.id);
+    yield put({ type: RATE_LOAD_SUCCESS, score: rating?.score });
 }
