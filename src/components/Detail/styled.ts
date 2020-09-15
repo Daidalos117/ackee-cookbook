@@ -57,3 +57,14 @@ export const StyledSection = styled.section`
         color: ${({ theme }) => theme.palette.primary.main};
     }
 `;
+
+export const StyledRateBar = styled.div`
+  padding: 35px;
+  display: flex;
+  justify-content: center;
+  
+  .heading {
+    color: ${({ theme }) => theme.palette.text.secondary};
+    font-size: 20px;
+  }
+`

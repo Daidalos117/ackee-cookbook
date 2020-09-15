@@ -49,7 +49,7 @@ const Content: React.FC<Props & RecipeContent> = ({
                 </List>
             </StyledSection>
             <StyledSection>
-                <Typography variant="h4" className="heading">Příprava jídla</Typography>
+                <Typography variant="h5" className="heading">Příprava jídla</Typography>
                 {isLoading ? (
                     <Skeleton
                         variant="rect"
