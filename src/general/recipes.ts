@@ -11,5 +11,4 @@ export interface RecipeDetail extends Recipe {
   description: string;
   ingredients: string[];
   info: string;
-
 }

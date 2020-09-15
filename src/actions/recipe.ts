@@ -1,8 +1,8 @@
 import { Recipes } from '../general/recipes';
 
-export const FETCH_RECIPE_REQUESTED = 'FETCH_RECIPES_REQUESTED';
-export const FETCH_RECIPE_SUCCESS = 'FETCH_RECIPES_SUCCESS';
-export const FETCH_RECIPE_ERROR = 'FETCH_RECIPES_ERROR';
+export const FETCH_RECIPE_REQUESTED = 'FETCH_RECIPE_REQUESTED';
+export const FETCH_RECIPE_SUCCESS = 'FETCH_RECIPE_SUCCESS';
+export const FETCH_RECIPE_ERROR = 'FETCH_RECIPE_ERROR';
 
 interface FetchRequestAction {
   type: typeof FETCH_RECIPE_REQUESTED;

@@ -11,6 +11,7 @@ import { RECIPES_NEW } from "../routes/routes";
 import RecipeList from "components/RecipeList";
 import MenuBar from "components/MenuBar";
 
+
 const StyledContainer = styled(Container)`
     margin-top: 56px;
 `;

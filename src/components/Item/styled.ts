@@ -20,6 +20,3 @@ export const ItemContent = styled.div`
     flex: 1;
 `;
 
-export const ItemDuration = styled.div`
-    font-size: 15px;
-`;
