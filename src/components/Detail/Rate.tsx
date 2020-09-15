@@ -5,7 +5,7 @@ import { useParams } from "react-router";
 import { useDispatch, useSelector } from "react-redux";
 
 import { StyledRateBar } from "./styled";
-import {State} from "reducers";
+import { State } from "reducers";
 import { rateRecipeRequest, rateLoadRequest } from "actions/recipe";
 
 interface Props {}
@@ -13,11 +13,11 @@ interface Props {}
 const Rate: React.FC<Props> = () => {
     let { id } = useParams();
     const dispatch = useDispatch();
-    const value = useSelector((state: State) => state.recipe.ownRating );
+    const value = useSelector((state: State) => state.recipe.ownRating);
 
     useEffect(() => {
         dispatch(rateLoadRequest(id));
-    }, [id, rateLoadRequest]);
+    }, [id, dispatch]);
 
     return (
         <StyledRateBar>

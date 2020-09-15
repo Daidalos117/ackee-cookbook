@@ -28,7 +28,7 @@ const Item: React.FC<P> = ({ name, duration, score, onClick }) => {
                 {!imgLoaded && <Loading absolute />}
             </Box>
             <ItemContent>
-                <Typography variant="h6">{name}</Typography>
+                <Typography variant="h6" className="heading">{name}</Typography>
                 <Rating value={score} size="small" readOnly />
                 <Duration fontSize={15} duration={duration} />
             </ItemContent>

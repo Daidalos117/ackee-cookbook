@@ -24,7 +24,7 @@ const RecipeList: React.FC<Props> = () => {
     const history = useHistory();
 
     useEffect(() => {
-        //dispatchFetchRequest();
+        dispatchFetchRequest();
     }, [dispatchFetchRequest]);
 
     return (
@@ -35,6 +35,7 @@ const RecipeList: React.FC<Props> = () => {
                 loader={<Loading height={100} />}
                 hasMore={hasMore}
                 next={dispatchFetchRequest}
+
             >
                 {recipes.map((recipe: Recipe) => (
                     <Item

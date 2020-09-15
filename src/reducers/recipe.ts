@@ -23,7 +23,6 @@ const initialState = {
 };
 
 export default (state = initialState, action: RecipeActionTypes) => {
-    console.log(action);
     switch (action.type) {
         case FETCH_RECIPE_REQUESTED:
             return { ...state, isLoading: true };
