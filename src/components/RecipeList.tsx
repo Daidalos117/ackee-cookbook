@@ -6,8 +6,9 @@ import { fetchRecipesRequest } from "../actions/recipes";
 import { State } from "../reducers";
 import Item from "components/Item/Item";
 import Loading from "components/Loading";
-import { RECIPES_DETAIL } from "../routes/routes";
+import { RECIPES_DETAIL } from "routes/routes";
 import { useHistory } from "react-router";
+import { Recipe } from "general/types";
 
 interface Props {}
 
@@ -35,7 +36,7 @@ const RecipeList: React.FC<Props> = () => {
                 hasMore={hasMore}
                 next={dispatchFetchRequest}
             >
-                {recipes.map(recipe => (
+                {recipes.map((recipe: Recipe) => (
                     <Item
                         {...recipe}
                         key={recipe.id}

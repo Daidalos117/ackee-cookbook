@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Box from "@material-ui/core/Box/Box";
 import { Theme } from "@material-ui/core";
 
 export const Header = styled.header`
@@ -43,6 +42,3 @@ export const Header = styled.header`
 `}
 `;
 
-export const HeaderBg = styled.img`
-    width: 100%;
-`;

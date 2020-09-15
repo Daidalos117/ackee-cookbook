@@ -3,7 +3,7 @@ import {
     FETCH_RECIPE_SUCCESS,
     FETCH_RECIPE_ERROR
 } from "../actions/recipe";
-import { RecipeDetail } from "../general/recipes";
+import { RecipeDetail } from "../general/types";
 import { RecipeActionTypes } from "../actions/recipe";
 
 export interface RecipeState {

@@ -1,4 +1,4 @@
-import { Recipes } from '../general/recipes';
+import { Recipes } from '../general/types';
 
 export const FETCH_RECIPE_REQUESTED = 'FETCH_RECIPE_REQUESTED';
 export const FETCH_RECIPE_SUCCESS = 'FETCH_RECIPE_SUCCESS';

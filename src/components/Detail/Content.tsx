@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
+import { RecipeContent } from "general/types";
 
-interface Props {
-}
+interface Props {}
 
-const Content: React.FC<Props> = props => (
-  <>
-  </>
-);
-
+const Content: React.FC<Props & RecipeContent> = ({
+    info,
+    description,
+    ingredients
+}) => <></>;
 
 export default Content;
