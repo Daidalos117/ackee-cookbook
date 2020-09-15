@@ -45,7 +45,7 @@ const Header: React.FC<Props> = ({ name, duration, score, isLoading }) => {
                             <div>
                                 <Rating value={score} readOnly />
                             </div>
-                            <Box textAlign="right">
+                            <Box textAlign="right" display="flex" alignItems="center">
                                 {isLoading ? (
                                     <Skeleton
                                         variant="rect"

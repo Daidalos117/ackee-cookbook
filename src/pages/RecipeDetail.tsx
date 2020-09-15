@@ -11,6 +11,7 @@ import {RECIPES, RECIPES_NEW} from "../routes/routes";
 import { fetchRecipeRequest } from "../actions/recipe";
 import { State } from "../reducers";
 import Header from "components/Detail/Header";
+import Content from "../components/Detail/Content";
 
 interface Props {}
 
@@ -26,7 +27,7 @@ const RecipeDetail: React.FC<Props> = () => {
 
     return (
         <>
-            <MenuBar>
+            <MenuBar position="absolute">
                 <Box>
                     <Button component={Link} to={RECIPES} color="default">
                         <ArrowBackIosIcon />
@@ -43,6 +44,12 @@ const RecipeDetail: React.FC<Props> = () => {
                 score={parseFloat(`${recipe.score}`)}
                 duration={recipe.duration}
                 isLoading={isLoading}
+            />
+            <Content
+                info={recipe.info}
+                isLoading={isLoading}
+                description={recipe.description}
+                ingredients={recipe.ingredients}
             />
         </>
     );

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Theme } from "@material-ui/core";
+import Container from "@material-ui/core/Container/Container";
 
 export const Header = styled.header`
     ${({ theme }) => `
@@ -39,6 +40,20 @@ export const Header = styled.header`
 
     .MuiRating-iconEmpty {
     }
+    
+   
 `}
 `;
 
+export const MargedContainer = styled(Container)`
+    margin-top: 50px;
+`;
+
+export const StyledSection = styled.section`
+    margin-top: 30px;
+
+    .heading {
+        margin-bottom: 20px;
+        color: ${({ theme }) => theme.palette.primary.main};
+    }
+`;
