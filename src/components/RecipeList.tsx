@@ -7,7 +7,7 @@ import { State } from "../reducers";
 import Item from "components/Item/Item";
 import Loading from "components/Loading";
 import { RECIPES_DETAIL } from "../routes/routes";
-import {useHistory} from "react-router";
+import { useHistory } from "react-router";
 
 interface Props {}
 
