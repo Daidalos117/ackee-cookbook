@@ -13,7 +13,7 @@ import MenuBar from "components/MenuBar";
 
 
 const StyledContainer = styled(Container)`
-    margin-top: 56px;
+    margin-top: 55px;
 `;
 
 interface Props {}

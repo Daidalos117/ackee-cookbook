@@ -46,7 +46,7 @@ export const Header = styled.header`
 `;
 
 export const MargedContainer = styled(Container)`
-    margin-top: 50px;
+    margin: 50px 0;
 `;
 
 export const StyledSection = styled.section`
@@ -59,12 +59,29 @@ export const StyledSection = styled.section`
 `;
 
 export const StyledRateBar = styled.div`
-  padding: 35px;
-  display: flex;
-  justify-content: center;
-  
-  .heading {
-    color: ${({ theme }) => theme.palette.text.secondary};
-    font-size: 20px;
-  }
-`
+    padding: 35px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: ${({ theme }) => theme.palette.primary.main};
+
+    .heading {
+        color: ${({ theme }) => theme.palette.text.secondary};
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .MuiRating-icon svg {
+      width: 40px;
+      height: 40px;
+    }
+
+    .MuiRating-iconFilled {
+        color: ${({ theme }) => theme.palette.text.secondary}; 
+    }
+
+    .MuiRating-iconEmpty {
+        color: ${({ theme }) => theme.palette.text.disabled};
+    }
+`;

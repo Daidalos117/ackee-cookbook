@@ -43,7 +43,7 @@ const Content: React.FC<Props & RecipeContent> = ({
                     ) : (
                         ingredients &&
                         ingredients.map(ingredient => (
-                            <ListItem>{ingredient}</ListItem>
+                            <ListItem key={ingredient}>{ingredient}</ListItem>
                         ))
                     )}
                 </List>
