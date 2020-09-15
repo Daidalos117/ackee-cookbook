@@ -1,6 +1,4 @@
-import React from "react";
 import styled from "styled-components";
-import { Theme } from "@material-ui/core";
 import Box from "@material-ui/core/Box/Box";
 
 export const Header = styled(Box)`
@@ -9,8 +7,7 @@ export const Header = styled(Box)`
     position: relative;
     overflow: hidden;
     align-items: flex-end;
-    
-    
+
     .bg {
         position: absolute;
         left: 0;
