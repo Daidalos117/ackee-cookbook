@@ -9,4 +9,4 @@ const Content: React.FC<Props> = props => (
 );
 
 
-export default Component;
+export default Content;

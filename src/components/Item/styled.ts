@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const StyledItem = styled.div`
     ${({ theme }) => `
   display: flex;
@@ -19,4 +18,3 @@ export const ItemContent = styled.div`
     padding-left: 18px;
     flex: 1;
 `;
-

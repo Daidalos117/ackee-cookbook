@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import Box from "@material-ui/core/Box/Box";
+import { Theme } from "@material-ui/core";
 
-export const Header = styled(Box)`
+export const Header = styled.header`
+    ${({ theme }) => `
     display: flex;
     height: 380px;
     position: relative;
@@ -20,6 +22,7 @@ export const Header = styled(Box)`
     .inner {
         position: relative;
         z-index: 2;
+        width: 100%;
     }
 
     .heading {
@@ -27,9 +30,9 @@ export const Header = styled(Box)`
     }
 
     .bottom-bar {
+        width: 100%;
         padding: 20px 0;
-        display: flex;
-        justify-content: space-between;
+        background-color: ${(theme as Theme).palette.secondary.main};
     }
 
     .MuiRating-iconFilled {
@@ -37,6 +40,7 @@ export const Header = styled(Box)`
 
     .MuiRating-iconEmpty {
     }
+`}
 `;
 
 export const HeaderBg = styled.img`
