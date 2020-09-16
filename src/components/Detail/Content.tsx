@@ -6,6 +6,8 @@ import ListItem from "@material-ui/core/ListItem";
 import Skeleton from "@material-ui/lab/Skeleton/Skeleton";
 
 import { MargedContainer, StyledSection } from "./styled";
+import Layout from 'components/Layout/Layout';
+
 
 interface Props {
     isLoading: boolean;
@@ -18,7 +20,7 @@ const Content: React.FC<Props & RecipeContent> = ({
     isLoading
 }) => (
     <>
-        <MargedContainer>
+        <Layout>
             {isLoading ? (
                 <Skeleton
                     variant="rect"
@@ -61,7 +63,7 @@ const Content: React.FC<Props & RecipeContent> = ({
                     <Typography variant="body2">{description}</Typography>
                 )}
             </StyledSection>
-        </MargedContainer>
+        </Layout>
     </>
 );
 

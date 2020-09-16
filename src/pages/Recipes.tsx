@@ -3,18 +3,13 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import AddIcon from "@material-ui/icons/Add";
 import Box from "@material-ui/core/Box";
-import Container from "@material-ui/core/Container";
-import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 import { RECIPES_NEW } from "../routes/routes";
 import RecipeList from "components/RecipeList/RecipeList";
 import MenuBar from "components/MenuBar/MenuBar";
+import Layout from "components/Layout/Layout";
 
-
-const StyledContainer = styled(Container)`
-    margin-top: 55px;
-`;
 
 interface Props {}
 
@@ -29,11 +24,9 @@ const Recipes: React.FC<Props> = () => {
                     </Button>
                 </Box>
             </MenuBar>
-            <StyledContainer>
-                <Container>
-                    <RecipeList />
-                </Container>
-            </StyledContainer>
+            <Layout>
+                <RecipeList />
+            </Layout>
         </>
     );
 };

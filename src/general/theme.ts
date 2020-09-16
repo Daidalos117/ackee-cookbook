@@ -14,6 +14,11 @@ const myTheme = createMuiTheme({
         text: {
           //secondary: 'white'
         }
+    },
+    typography: {
+        h5: {
+            
+        }
     }
 });
 

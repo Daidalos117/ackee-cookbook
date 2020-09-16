@@ -1,53 +1,77 @@
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { NewRecipe } from "general/types";
 import TextField from "@material-ui/core/TextField/TextField";
 import Typography from "@material-ui/core/Typography/Typography";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import Container from "@material-ui/core/Container";
+import Button from "@material-ui/core/Button/Button";
 import Box from "@material-ui/core/Box";
-import Grid from "@material-ui/core/Grid";
+import AddIcon from "@material-ui/icons/Add";
 
 interface Props {}
 
 const Form: React.FC<Props> = () => {
     const { register, handleSubmit, watch, errors } = useForm();
+    const [ingredientsCount, setIngredientsCount] = useState<number>(1);
     const onSubmit = (data: Partial<NewRecipe>) => console.log(data);
 
     return (
         <form onSubmit={handleSubmit(onSubmit)}>
             <Container>
-                <Box>
+                <Box mt={2}>
                     <TextField
                         inputRef={register}
                         label="Název receptu"
                         name="name"
+                        fullWidth
                     />
                 </Box>
-                <Box>
+                <Box mt={2}>
                     <TextField
                         inputRef={register}
                         label="Úvodní text"
                         name="info"
+                        fullWidth
                     />
                 </Box>
-                <Box>
+                <Box mt={4}>
                     <Typography variant="h5">Ingredience</Typography>
 
-                    <TextField
-                        inputRef={register}
-                        label="Vaše ingredience"
-                        name="ingredients[]"
-                    />
+                    {[...Array(ingredientsCount).keys()].map(key => (
+                        <Box mt={1}>
+                            <TextField
+                                inputRef={register}
+                                label="Vaše ingredience"
+                                name={`ingredients[${key}]`}
+                                fullWidth
+                            />
+                        </Box>
+                    ))}
+
+                    <Box mt={1}>
+                        <Button
+                            color="secondary"
+                            variant="outlined"
+                            size="small"
+                            onClick={e =>
+                                setIngredientsCount(ingredientsCount + 1)
+                            }
+                        >
+                            <AddIcon />
+                            PŘIDAT
+                        </Button>
+                    </Box>
                 </Box>
-                <Box>
+                <Box mt={2}>
                     <TextField
                         inputRef={register}
                         label="Instrukce"
                         name="description"
+                        fullWidth
                     />
                 </Box>
-                <Box>
+                <Box mt={2}>
                     <TextField
                         inputRef={register}
                         label="Čas"
@@ -59,6 +83,7 @@ const Form: React.FC<Props> = () => {
                                 </InputAdornment>
                             )
                         }}
+                        fullWidth
                     />
                 </Box>
             </Container>
