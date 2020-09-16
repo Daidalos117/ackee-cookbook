@@ -1,7 +1,9 @@
 import { createMuiTheme } from "@material-ui/core";
 
-const COLOR_PRIMARY = '#0000ff';
-const COLOR_SECONDARY = '#ff00ff';
+const COLOR_PRIMARY = "#0000ff";
+const COLOR_SECONDARY = "#ff00ff";
+
+const defaultTheme = createMuiTheme();
 
 const myTheme = createMuiTheme({
     palette: {
@@ -12,12 +14,27 @@ const myTheme = createMuiTheme({
             main: COLOR_SECONDARY
         },
         text: {
-          //secondary: 'white'
+            secondary: "white"
         }
     },
     typography: {
-        h5: {
-            
+        h5: {}
+    },
+    overrides: {
+        MuiInput: {
+            input: {
+                //color: defaultTheme.palette.text.secondary
+            }
+        },
+        MuiFormLabel: {
+            root: {
+                color: defaultTheme.palette.text.secondary
+            }
+        },
+        MuiTypography: {
+          body2: {
+              fontSize: '1rem'
+          }
         }
     }
 });

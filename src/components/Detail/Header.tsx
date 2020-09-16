@@ -1,6 +1,5 @@
 import React from "react";
 import { Header as StyledHeader } from "./styled";
-import Container from "@material-ui/core/Container/Container";
 import Typography from "@material-ui/core/Typography/Typography";
 import Box from "@material-ui/core/Box/Box";
 import Rating from "@material-ui/lab/Rating";
@@ -9,6 +8,7 @@ import useTheme from "@material-ui/core/styles/useTheme";
 
 import Duration from "../Duration/Duration";
 import headerBg from "img/img_big.png";
+import Layout from "components/Layout/Layout";
 
 interface Props {
     name?: string;
@@ -24,8 +24,12 @@ const Header: React.FC<Props> = ({ name, duration, score, isLoading }) => {
         <StyledHeader>
             <img src={headerBg} alt="Recipe Header BG" className="bg" />
             <div className="inner">
-                <Container>
-                    <Typography variant="h4" className="heading">
+                <Layout marginTop={false}>
+                    <Typography
+                        variant="h4"
+                        className="heading"
+                        color="textSecondary"
+                    >
                         {isLoading ? (
                             <Skeleton
                                 variant="rect"
@@ -37,15 +41,19 @@ const Header: React.FC<Props> = ({ name, duration, score, isLoading }) => {
                             name
                         )}
                     </Typography>
-                </Container>
+                </Layout>
 
                 <div className="bottom-bar">
-                    <Container>
+                    <Layout marginTop={false}>
                         <Box display="flex" justifyContent="space-between">
                             <div>
                                 <Rating value={score} readOnly />
                             </div>
-                            <Box textAlign="right" display="flex" alignItems="center">
+                            <Box
+                                textAlign="right"
+                                display="flex"
+                                alignItems="center"
+                            >
                                 {isLoading ? (
                                     <Skeleton
                                         variant="rect"
@@ -55,13 +63,13 @@ const Header: React.FC<Props> = ({ name, duration, score, isLoading }) => {
                                     />
                                 ) : (
                                     <Duration
-                                        color={theme.palette.text.secondary}
+                                        color={theme.palette.secondary.contrastText}
                                         duration={duration || 0}
                                     />
                                 )}
                             </Box>
                         </Box>
-                    </Container>
+                    </Layout>
                 </div>
             </div>
         </StyledHeader>

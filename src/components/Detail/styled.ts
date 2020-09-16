@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { Theme } from "@material-ui/core";
-import Container from "@material-ui/core/Container/Container";
 
 export const Header = styled.header`
     ${({ theme }) => `
@@ -41,13 +40,9 @@ export const Header = styled.header`
     .MuiRating-iconEmpty {
     }
     
-   
 `}
 `;
 
-export const MargedContainer = styled(Container)`
-    margin: 50px 0;
-`;
 
 export const StyledSection = styled.section`
     margin-top: 30px;
@@ -67,7 +62,7 @@ export const StyledRateBar = styled.div`
     background-color: ${({ theme }) => theme.palette.primary.main};
 
     .heading {
-        color: ${({ theme }) => theme.palette.text.secondary};
+        color: ${({ theme }) => theme.palette.primary.contrastText};
         font-size: 20px;
         margin-bottom: 30px;
     }

@@ -28,15 +28,15 @@ const RecipeDetail: React.FC<Props> = () => {
 
     return (
         <>
-            <MenuBar position="absolute">
-                <Box>
-                    <Button component={Link} to={RECIPES} color="default">
+            <MenuBar position="absolute" elevation={0}>
+                <Box color="white">
+                    <Button component={Link} to={RECIPES} color="inherit">
                         <ArrowBackIosIcon />
                     </Button>
                 </Box>
-                <Box>
-                    <Button component={Link} to={RECIPES_NEW} color="default">
-                        <AddIcon />
+                <Box color="white">
+                    <Button component={Link} to={RECIPES_NEW} color="inherit">
+                        <AddIcon color="inherit" />
                     </Button>
                 </Box>
             </MenuBar>
@@ -52,7 +52,9 @@ const RecipeDetail: React.FC<Props> = () => {
                 description={recipe.description}
                 ingredients={recipe.ingredients}
             />
-            <Rate />
+            <Box mt={5}>
+                <Rate />
+            </Box>
         </>
     );
 };
