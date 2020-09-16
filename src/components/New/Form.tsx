@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useForm } from "react-hook-form";
+import { useForm,  } from "react-hook-form";
 import { NewRecipe } from "general/types";
 import TextField from "@material-ui/core/TextField/TextField";
 import Typography from "@material-ui/core/Typography/Typography";
@@ -9,15 +9,16 @@ import Button from "@material-ui/core/Button/Button";
 import Box from "@material-ui/core/Box";
 import AddIcon from "@material-ui/icons/Add";
 
-interface Props {}
+interface Props {
+    onSubmit: (data: any) => void;
+}
 
-const Form: React.FC<Props> = () => {
+const Form: React.FC<Props> = ({onSubmit}) => {
     const { register, handleSubmit, watch, errors } = useForm();
     const [ingredientsCount, setIngredientsCount] = useState<number>(1);
-    const onSubmit = (data: Partial<NewRecipe>) => console.log(data);
 
     return (
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form onSubmit={handleSubmit(onSubmit)} id="saveForm">
             <Container>
                 <Box mt={2}>
                     <TextField
@@ -39,7 +40,7 @@ const Form: React.FC<Props> = () => {
                     <Typography variant="h5">Ingredience</Typography>
 
                     {[...Array(ingredientsCount).keys()].map(key => (
-                        <Box mt={1}>
+                        <Box mt={1} key={key}>
                             <TextField
                                 inputRef={register}
                                 label="Vaše ingredience"
@@ -54,7 +55,7 @@ const Form: React.FC<Props> = () => {
                             color="secondary"
                             variant="outlined"
                             size="small"
-                            onClick={e =>
+                            onClick={() =>
                                 setIngredientsCount(ingredientsCount + 1)
                             }
                         >

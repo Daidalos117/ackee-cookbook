@@ -14,7 +14,7 @@ import { addRating, getRating } from "general/helpers";
 
 export function* fetchRecipe(action: RecipeActionTypes) {
     if (!("id" in action)) {
-        return put({ type: FETCH_RECIPE_ERROR, message: "ID not provided" });
+        return put({ type: FETCH_RECIPE_ERROR, error: "ID not provided" });
     }
 
     const { id } = action;
@@ -31,17 +31,17 @@ export function* fetchRecipe(action: RecipeActionTypes) {
 
         yield put({ type: FETCH_RECIPE_SUCCESS, data: data });
     } catch (e) {
-        yield put({ type: FETCH_RECIPE_ERROR, message: e.message });
+        yield put({ type: FETCH_RECIPE_ERROR, error: e.message });
     }
 }
 
 export function* rateRecipe(action: RecipeActionTypes) {
     if (!("id" in action)) {
-        return put({ type: RATE_RECIPE_ERROR, message: "ID not provided" });
+        return put({ type: RATE_RECIPE_ERROR, error: "ID not provided" });
     }
 
     if (!("score" in action)) {
-        return put({ type: RATE_RECIPE_ERROR, message: "Score not provided" });
+        return put({ type: RATE_RECIPE_ERROR, error: "Score not provided" });
     }
 
     const { id, score } = action;
@@ -68,7 +68,7 @@ export function* rateRecipe(action: RecipeActionTypes) {
 
         yield put({ type: RATE_RECIPE_SUCCESS, score: serverScore });
     } catch (e) {
-        yield put({ type: RATE_RECIPE_ERROR, message: e.message });
+        yield put({ type: RATE_RECIPE_ERROR, error: e.message });
     }
 }
 

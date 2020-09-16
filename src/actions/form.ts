@@ -1,27 +1,33 @@
-import {Recipes} from "../general/types";
-import {FETCH_RECIPE_ERROR, FETCH_RECIPE_REQUESTED, FETCH_RECIPE_SUCCESS} from "./recipe";
+import {NewRecipe} from "../general/types";
+import {FETCH_RECIPE_REQUESTED} from "./recipe";
 
 export const SUBMIT_RECIPE_REQUESTED = "SUBMIT_RECIPE_REQUESTED";
 export const SUBMIT_RECIPE_SUCCESS = "SUBMIT_RECIPE_SUCCESS";
 export const SUBMIT_RECIPE_ERROR = "SUBMIT_RECIPE_ERROR";
 
 
-interface SubmitRecipeSubmitAction {
+export interface SubmitRecipeRequestedAction {
   type: typeof SUBMIT_RECIPE_REQUESTED;
+  payload: NewRecipe;
 }
 
-interface SubmitRecipeSuccessAction {
+export interface SubmitRecipeSuccessAction {
   type: typeof SUBMIT_RECIPE_SUCCESS;
 }
 
-interface SubmitRecipeErrorAction {
+export interface SubmitRecipeErrorAction {
   type: typeof SUBMIT_RECIPE_ERROR;
   error: string;
 }
 
-export type RecipeSubmitActions = SubmitRecipeSubmitAction | SubmitRecipeSuccessAction | SubmitRecipeErrorAction;
+export type RecipeSubmitActions = SubmitRecipeRequestedAction | SubmitRecipeSuccessAction | SubmitRecipeErrorAction;
 export type RecipeFormActions = RecipeSubmitActions;
 
+
+export const submitRecipeRequest = (payload: NewRecipe) => ({
+  type: SUBMIT_RECIPE_REQUESTED,
+  payload
+});
 
 
 export type FormActions = RecipeFormActions;

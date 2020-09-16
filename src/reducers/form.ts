@@ -5,10 +5,19 @@ import {
     SUBMIT_RECIPE_ERROR
 } from "../actions/form";
 
+export interface FormState {
+  recipe: RecipeState;
+}
+
+export interface RecipeState {
+  isSubmitting: false;
+  error: "";
+}
+
 const recipeInitialState = {
     isSubmitting: false,
     error: "",
-    data: {}
+
 };
 
 const initialState = {
@@ -16,6 +25,7 @@ const initialState = {
 };
 
 export default (state = initialState, action: FormActions) => {
+
     switch (action.type) {
         case SUBMIT_RECIPE_REQUESTED:
             return {

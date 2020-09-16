@@ -2,7 +2,7 @@ import React, { useCallback, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import InfiniteScroll from "react-infinite-scroll-component";
 
-import { fetchRecipesRequest } from "../../actions/recipes";
+import { fetchRecipesRequest } from "actions/recipes";
 import { State } from "reducers/index";
 import Item from "components/Item/Item";
 import Loading from "components/Loading/Loading";
