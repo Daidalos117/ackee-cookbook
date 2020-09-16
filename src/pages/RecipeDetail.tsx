@@ -6,8 +6,7 @@ import AddIcon from "@material-ui/icons/Add";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import { useDispatch, useSelector } from "react-redux";
 
-
-import MenuBar from "components/MenuBar";
+import MenuBar from "components/MenuBar/MenuBar";
 import { RECIPES, RECIPES_NEW } from "routes/routes";
 import { fetchRecipeRequest } from "actions/recipe";
 import { State } from "reducers";

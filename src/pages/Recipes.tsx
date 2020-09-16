@@ -8,8 +8,8 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 import { RECIPES_NEW } from "../routes/routes";
-import RecipeList from "components/RecipeList";
-import MenuBar from "components/MenuBar";
+import RecipeList from "components/RecipeList/RecipeList";
+import MenuBar from "components/MenuBar/MenuBar";
 
 
 const StyledContainer = styled(Container)`

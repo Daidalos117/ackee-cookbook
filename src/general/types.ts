@@ -1,8 +1,11 @@
 export interface Recipe {
     name: string;
     duration: number;
-    id: string;
-    score: number;
+}
+
+export interface RecipeBackendData {
+  score: number;
+  id: string;
 }
 
 export interface RecipeContent {
@@ -11,6 +14,8 @@ export interface RecipeContent {
   info: string;
 }
 
-export type Recipes = Recipe[];
-export type RecipeDetail = Recipe & RecipeContent;
+export type RecipeWithBackendData = Recipe & RecipeBackendData;
+export type Recipes = RecipeWithBackendData[];
+export type RecipeDetail = RecipeWithBackendData & RecipeContent;
+export type NewRecipe = Recipe & RecipeContent;
 

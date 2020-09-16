@@ -3,10 +3,10 @@ import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import Rating from "@material-ui/lab/Rating";
 
-import { Recipe } from "general/types";
+import { RecipeWithBackendData as Recipe } from "general/types";
 import { StyledItem, ItemContent } from "./styled";
 import Duration from "components/Duration/Duration";
-import Loading from "../Loading";
+import Loading from "../Loading/Loading";
 
 interface Props {
     onClick: (event: React.MouseEvent<HTMLDivElement>) => void;
