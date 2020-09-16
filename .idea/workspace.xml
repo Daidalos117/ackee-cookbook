@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2ccbb72-d8a4-4313-8478-07607eca16da" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/New/Form.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/RecipeNew.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Item/Item.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Item/Item.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Loading.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Loading/Loading.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MenuBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MenuBar/MenuBar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RecipeList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RecipeList/RecipeList.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/general/theme.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/general/theme.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/general/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/general/types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/RecipeDetail.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/RecipeDetail.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Recipes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Recipes.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/routes.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,8 +46,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/general/theme.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+            <state relative-caret-position="253">
+              <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -322,7 +310,7 @@
       <updated>1600097603216</updated>
       <workItem from="1600097608199" duration="17975000" />
       <workItem from="1600180886191" duration="16019000" />
-      <workItem from="1600248371286" duration="2063000" />
+      <workItem from="1600248371286" duration="2122000" />
     </task>
     <task id="LOCAL-00001" summary="Connect Redux and Sagas">
       <created>1600099189961</created>
@@ -513,11 +501,18 @@
       <option name="project" value="LOCAL" />
       <updated>1600202849912</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="New recipe">
+      <created>1600250903972</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1600250903972</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36057000" />
+    <option name="totallyTimeSpent" value="36116000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -539,9 +534,9 @@
       <window_info anchor="bottom" id="DB Execution Console" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.32923833" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.32923833" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="14" weight="0.3280098" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="14" visible="true" weight="0.3280098" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -608,7 +603,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Basic recipes fetch" />
     <MESSAGE value="Basic recepies list" />
     <MESSAGE value="Recipe design changes" />
     <MESSAGE value="Basic recipes loading state" />
@@ -633,7 +627,8 @@
     <MESSAGE value="Basic rating of recipe" />
     <MESSAGE value="Restore Rating functionality" />
     <MESSAGE value="Small optimizations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Small optimizations" />
+    <MESSAGE value="New recipe" />
+    <option name="LAST_COMMIT_MESSAGE" value="New recipe" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/App.test.tsx" />
@@ -977,8 +972,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/general/theme.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        <state relative-caret-position="253">
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
         </state>
       </provider>
     </entry>
