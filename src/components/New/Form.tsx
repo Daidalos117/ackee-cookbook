@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useForm,  } from "react-hook-form";
-import { NewRecipe } from "general/types";
 import TextField from "@material-ui/core/TextField/TextField";
 import Typography from "@material-ui/core/Typography/Typography";
 import InputAdornment from "@material-ui/core/InputAdornment";
@@ -14,7 +13,7 @@ interface Props {
 }
 
 const Form: React.FC<Props> = ({onSubmit}) => {
-    const { register, handleSubmit, watch, errors } = useForm();
+    const { register, handleSubmit } = useForm();
     const [ingredientsCount, setIngredientsCount] = useState<number>(1);
 
     return (

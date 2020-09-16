@@ -2,22 +2,22 @@ import {
     FormActions,
     SUBMIT_RECIPE_REQUESTED,
     SUBMIT_RECIPE_SUCCESS,
-    SUBMIT_RECIPE_ERROR
+    SUBMIT_RECIPE_ERROR,
+    SUBMIT_RECIPE_ERROR_RESET
 } from "../actions/form";
 
 export interface FormState {
-  recipe: RecipeState;
+    recipe: RecipeState;
 }
 
 export interface RecipeState {
-  isSubmitting: false;
-  error: "";
+    isSubmitting: false;
+    error: "";
 }
 
 const recipeInitialState = {
     isSubmitting: false,
-    error: "",
-
+    error: ""
 };
 
 const initialState = {
@@ -25,7 +25,6 @@ const initialState = {
 };
 
 export default (state = initialState, action: FormActions) => {
-
     switch (action.type) {
         case SUBMIT_RECIPE_REQUESTED:
             return {
@@ -41,7 +40,17 @@ export default (state = initialState, action: FormActions) => {
             return {
                 ...state,
                 recipe: {
+                    ...state.recipe,
+                    isSubmitting: false,
                     error: action.error
+                }
+            };
+        case SUBMIT_RECIPE_ERROR_RESET:
+            return {
+                ...state,
+                recipe: {
+                    ...state.recipe,
+                    error: ""
                 }
             };
         default:

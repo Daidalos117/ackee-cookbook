@@ -1,5 +1,4 @@
 import {
-    SUBMIT_RECIPE_REQUESTED,
     SUBMIT_RECIPE_ERROR,
     SUBMIT_RECIPE_SUCCESS,
     SubmitRecipeRequestedAction
@@ -27,12 +26,18 @@ export function* submitRecipe(action: SubmitRecipeRequestedAction) {
             RECIPES
         );
         const { data } = response;
+            console.log('data', data);
         if(data.id) {
           yield put({ type: SUBMIT_RECIPE_SUCCESS, data: data });
         } else {
           yield put({ type: SUBMIT_RECIPE_ERROR, error: data.message });
         }
     } catch (e) {
+        if(e.response.data.message) {
+          yield put({ type: SUBMIT_RECIPE_ERROR, error: e.response.data.message });
+        }else {
         yield put({ type: SUBMIT_RECIPE_ERROR, error: e.message });
+
+        }
     }
 }

@@ -5,7 +5,7 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import Skeleton from "@material-ui/lab/Skeleton/Skeleton";
 
-import { MargedContainer, StyledSection } from "./styled";
+import { StyledSection } from "./styled";
 import Layout from 'components/Layout/Layout';
 
 
