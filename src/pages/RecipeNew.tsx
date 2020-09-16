@@ -13,16 +13,19 @@ import { RECIPES } from "routes/routes";
 import NewRecipeForm from "components/New/Form";
 import Layout from "components/Layout/Layout";
 import CircularProgress from "@material-ui/core/CircularProgress";
-import { submitRecipeRequest, resetRecipeError } from "actions/form";
+import { resetRecipeError, resetRecipeSuccess } from "actions/form";
 import Snackbar from "components/Snackbar/Snackbar";
 import { State } from "reducers";
 
 interface Props {}
 
-const RecipeNew: React.FC<Props> = props => {
+const RecipeNew: React.FC<Props> = () => {
     const dispatch = useDispatch();
     const isSubmitting = useSelector(
         (state: State) => state.form.recipe.isSubmitting
+    );
+    const formSuccess = useSelector(
+        (state: State) => state.form.recipe.success
     );
     const formError = useSelector((state: State) => state.form.recipe.error);
 
@@ -56,15 +59,21 @@ const RecipeNew: React.FC<Props> = props => {
                 </Box>
             </MenuBar>
             <Layout>
-                <NewRecipeForm
-                    onSubmit={data => dispatch(submitRecipeRequest(data))}
-                />
+                <NewRecipeForm />
                 <Snackbar
                     severity="error"
                     open={!!formError}
                     handleClose={() => dispatch(resetRecipeError())}
                 >
                     {formError}
+                </Snackbar>
+
+                <Snackbar
+                    severity="success"
+                    open={!!formSuccess}
+                    handleClose={() => dispatch(resetRecipeSuccess())}
+                >
+                    Recept úspěšně uložen.
                 </Snackbar>
             </Layout>
         </>

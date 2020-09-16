@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e2ccbb72-d8a4-4313-8478-07607eca16da" name="Default Changelist" comment="Basic form submiting">
-      <change afterPath="$PROJECT_DIR$/src/components/Snackbar/Snackbar.tsx" afterDir="false" />
+    <list default="true" id="e2ccbb72-d8a4-4313-8478-07607eca16da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/actions/form.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/form.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Detail/Content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Detail/Content.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/New/Form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/New/Form.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/RecipeNew.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/RecipeNew.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/reducers/form.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/form.ts" afterDir="false" />
@@ -19,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pages/RecipeNew.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="67" column="27" selection-start-line="67" selection-start-column="27" selection-end-line="67" selection-end-column="27" />
+            <state relative-caret-position="400">
+              <caret line="75" column="42" selection-start-line="75" selection-start-column="42" selection-end-line="75" selection-end-column="42" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -32,28 +30,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Snackbar/Snackbar.tsx">
+        <entry file="file://$PROJECT_DIR$/src/actions/form.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="12" selection-start-column="12" selection-end-column="12" />
+            <state relative-caret-position="197">
+              <caret line="48" column="35" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/actions/form.ts">
+        <entry file="file://$PROJECT_DIR$/src/reducers/form.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/sagas/form.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="8" selection-start-column="8" selection-end-column="8" />
+            <state relative-caret-position="293">
+              <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#195#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -122,13 +114,13 @@
         <option value="$PROJECT_DIR$/src/components/Loading/Loading.tsx" />
         <option value="$PROJECT_DIR$/src/sagas/index.ts" />
         <option value="$PROJECT_DIR$/src/sagas/recipe.ts" />
-        <option value="$PROJECT_DIR$/src/pages/RecipeNew.tsx" />
-        <option value="$PROJECT_DIR$/src/reducers/form.ts" />
-        <option value="$PROJECT_DIR$/src/components/New/Form.tsx" />
         <option value="$PROJECT_DIR$/src/components/Detail/Content.tsx" />
         <option value="$PROJECT_DIR$/src/components/Snackbar/Snackbar.tsx" />
-        <option value="$PROJECT_DIR$/src/actions/form.ts" />
         <option value="$PROJECT_DIR$/src/sagas/form.ts" />
+        <option value="$PROJECT_DIR$/src/reducers/form.ts" />
+        <option value="$PROJECT_DIR$/src/components/New/Form.tsx" />
+        <option value="$PROJECT_DIR$/src/actions/form.ts" />
+        <option value="$PROJECT_DIR$/src/pages/RecipeNew.tsx" />
       </list>
     </option>
   </component>
@@ -218,7 +210,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="form&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/sagas/form.ts&#10;Snackbar/Snackbar.tsx&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/components/Snackbar/Snackbar.tsx&#10;Detail/Content.t&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/components/Detail/Content.tsx&#10;New/Form.tsx&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/components/New/Form.tsx&#10;Loadin&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/components/Loading/Loading.tsx&#10;Menu&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/components/MenuBar/MenuBar.tsx&#10;App&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/components/App.tsx&#10;Theme&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/general/theme.ts&#10;rec&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/components/RecipeList.tsx&#10;Marged&#9;null&#9;null&#10;StyledCont&#9;null&#9;null&#10;Rec&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/components/RecipeList.tsx&#10;Recipe&#9;null&#9;null&#10;AxiosReq&#9;null&#9;null&#10;Sa&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/sagas&#10;/routes/index.tsx&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/routes/index.tsx&#10;Item&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/components/Item/Item.tsx&#10;reducers/index&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/reducers/index.ts" />
+    <property name="SearchEverywhereHistoryKey" value="Rec&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/pages/RecipeNew.tsx&#10;reduc&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/reducers&#10;form&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/sagas/form.ts&#10;Snackbar/Snackbar.tsx&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/components/Snackbar/Snackbar.tsx&#10;Detail/Content.t&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/components/Detail/Content.tsx&#10;New/Form.tsx&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/components/New/Form.tsx&#10;Loadin&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/components/Loading/Loading.tsx&#10;Menu&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/components/MenuBar/MenuBar.tsx&#10;App&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/components/App.tsx&#10;Theme&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/general/theme.ts&#10;rec&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/components/RecipeList.tsx&#10;Marged&#9;null&#9;null&#10;StyledCont&#9;null&#9;null&#10;Recipe&#9;null&#9;null&#10;AxiosReq&#9;null&#9;null&#10;Sa&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/sagas&#10;/routes/index.tsx&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/routes/index.tsx&#10;Item&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/components/Item/Item.tsx&#10;reducers/index&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/reducers/index.ts" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -268,7 +260,7 @@
       <workItem from="1600097608199" duration="17975000" />
       <workItem from="1600180886191" duration="16019000" />
       <workItem from="1600248371286" duration="2578000" />
-      <workItem from="1600272604533" duration="8546000" />
+      <workItem from="1600272604533" duration="11410000" />
     </task>
     <task id="LOCAL-00001" summary="Connect Redux and Sagas">
       <created>1600099189961</created>
@@ -487,15 +479,21 @@
       <option name="project" value="LOCAL" />
       <updated>1600280377972</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Error reporting in new form">
+      <created>1600284056929</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1600284056929</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45118000" />
+    <option name="totallyTimeSpent" value="47982000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20171674" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -514,9 +512,9 @@
       <window_info anchor="bottom" id="DB Execution Console" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.32923833" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.32923833" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="14" weight="0.33046684" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="14" visible="true" weight="0.33046684" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -583,7 +581,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Better menu styling" />
     <MESSAGE value="Basic item design" />
     <MESSAGE value="Working infinity scroll" />
     <MESSAGE value="Nicer prettier settings" />
@@ -608,7 +605,8 @@
     <MESSAGE value="Ingredients increment function" />
     <MESSAGE value="Design changes" />
     <MESSAGE value="Basic form submiting" />
-    <option name="LAST_COMMIT_MESSAGE" value="Basic form submiting" />
+    <MESSAGE value="Error reporting in new form" />
+    <option name="LAST_COMMIT_MESSAGE" value="Error reporting in new form" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/react-app-env.d.ts">
@@ -945,32 +943,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/form.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="43" column="40" lean-forward="true" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#162#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sagas/index.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
           <folding>
             <element signature="e#0#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/New/Form.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -982,16 +960,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/RecipeNew.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="67" column="27" selection-start-line="67" selection-start-column="27" selection-end-line="67" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Snackbar/Snackbar.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -999,17 +967,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/form.ts">
+    <entry file="file://$PROJECT_DIR$/src/sagas/form.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="85">
+          <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sagas/form.ts">
+    <entry file="file://$PROJECT_DIR$/src/reducers/form.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" selection-start-column="8" selection-end-column="8" />
+        <state relative-caret-position="293">
+          <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#195#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/form.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="48" column="35" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/New/Form.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="77" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/RecipeNew.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="75" column="42" selection-start-line="75" selection-start-column="42" selection-end-line="75" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

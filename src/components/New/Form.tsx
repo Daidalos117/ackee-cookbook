@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { useForm,  } from "react-hook-form";
+import React, { useEffect, useState } from "react";
+import { useForm } from "react-hook-form";
 import TextField from "@material-ui/core/TextField/TextField";
 import Typography from "@material-ui/core/Typography/Typography";
 import InputAdornment from "@material-ui/core/InputAdornment";
@@ -8,13 +8,27 @@ import Button from "@material-ui/core/Button/Button";
 import Box from "@material-ui/core/Box";
 import AddIcon from "@material-ui/icons/Add";
 
-interface Props {
-    onSubmit: (data: any) => void;
-}
+import { useDispatch, useSelector } from "react-redux";
 
-const Form: React.FC<Props> = ({onSubmit}) => {
-    const { register, handleSubmit } = useForm();
+import { submitRecipeRequest } from "actions/form";
+import { State } from "../../reducers";
+
+interface Props {}
+
+const Form: React.FC<Props> = () => {
+    const { register, handleSubmit, reset } = useForm();
     const [ingredientsCount, setIngredientsCount] = useState<number>(1);
+    const dispatch = useDispatch();
+    const success = useSelector((state: State) => state.form.recipe.success);
+    const onSubmit = (data: any) => {
+        dispatch(submitRecipeRequest(data));
+    };
+
+    useEffect(() => {
+        if (success) {
+            reset({});
+        }
+    }, [success, reset]);
 
     return (
         <form onSubmit={handleSubmit(onSubmit)} id="saveForm">
@@ -83,7 +97,6 @@ const Form: React.FC<Props> = ({onSubmit}) => {
                                 </InputAdornment>
                             )
                         }}
-                        fullWidth
                     />
                 </Box>
             </Container>

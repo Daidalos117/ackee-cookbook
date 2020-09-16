@@ -26,7 +26,7 @@ export function* submitRecipe(action: SubmitRecipeRequestedAction) {
             RECIPES
         );
         const { data } = response;
-            console.log('data', data);
+
         if(data.id) {
           yield put({ type: SUBMIT_RECIPE_SUCCESS, data: data });
         } else {
