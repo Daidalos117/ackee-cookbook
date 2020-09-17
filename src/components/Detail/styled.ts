@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Theme } from "@material-ui/core";
+import List from "@material-ui/core/List";
 
 export const Header = styled.header`
     ${({ theme }) => `
@@ -80,3 +81,15 @@ export const StyledRateBar = styled.div`
         color: ${({ theme }) => theme.palette.text.disabled};
     }
 `;
+
+export const StyledList = styled(List)`
+  padding-left: 30px;
+  list-style: disc;
+  
+  li {
+    display: list-item;
+    padding: 5px 0;
+  }
+`
+
+

@@ -17,9 +17,9 @@ const myTheme = createMuiTheme({
             secondary: "white"
         }
     },
-    typography: {
-        h5: {}
-    },
+    typography: {},
+    spacing: 10,
+
     overrides: {
         MuiInput: {
             input: {
@@ -32,9 +32,9 @@ const myTheme = createMuiTheme({
             }
         },
         MuiTypography: {
-          body2: {
-              fontSize: '1rem'
-          }
+            body2: {
+                fontSize: "1rem"
+            }
         }
     }
 });

@@ -1,13 +1,11 @@
 import React from "react";
 import { RecipeContent } from "general/types";
 import Typography from "@material-ui/core/Typography/Typography";
-import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import Skeleton from "@material-ui/lab/Skeleton/Skeleton";
 
-import { StyledSection } from "./styled";
-import Layout from 'components/Layout/Layout';
-
+import { StyledSection, StyledList } from "./styled";
+import Layout from "components/Layout/Layout";
 
 interface Props {
     isLoading: boolean;
@@ -33,8 +31,10 @@ const Content: React.FC<Props & RecipeContent> = ({
             )}
 
             <StyledSection>
-                <Typography variant="h5" className="heading">Ingredience</Typography>
-                <List>
+                <Typography variant="h5" className="heading">
+                    Ingredience
+                </Typography>
+                <StyledList>
                     {isLoading ? (
                         <Skeleton
                             variant="rect"
@@ -48,10 +48,12 @@ const Content: React.FC<Props & RecipeContent> = ({
                             <ListItem key={ingredient}>{ingredient}</ListItem>
                         ))
                     )}
-                </List>
+                </StyledList>
             </StyledSection>
             <StyledSection>
-                <Typography variant="h5" className="heading">Příprava jídla</Typography>
+                <Typography variant="h5" className="heading">
+                    Příprava jídla
+                </Typography>
                 {isLoading ? (
                     <Skeleton
                         variant="rect"

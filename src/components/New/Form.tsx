@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import TextField from "@material-ui/core/TextField/TextField";
-import Typography from "@material-ui/core/Typography/Typography";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import Container from "@material-ui/core/Container";
 import Button from "@material-ui/core/Button/Button";
@@ -13,6 +12,7 @@ import { useDispatch, useSelector } from "react-redux";
 import schema from './schema';
 import { submitRecipeRequest } from "actions/form";
 import { State } from "reducers";
+import { StyledHeading } from "./styled";
 
 interface Props {}
 
@@ -56,8 +56,8 @@ const Form: React.FC<Props> = () => {
                         fullWidth
                     />
                 </Box>
-                <Box mt={4}>
-                    <Typography variant="h5">Ingredience</Typography>
+                <Box mt={4.5}>
+                    <StyledHeading variant="h5">Ingredience</StyledHeading>
 
                     {[...Array(ingredientsCount).keys()].map(key => (
                         <Box mt={1} key={key}>
@@ -72,7 +72,7 @@ const Form: React.FC<Props> = () => {
                         </Box>
                     ))}
 
-                    <Box mt={1}>
+                    <Box mt={1.5}>
                         <Button
                             color="secondary"
                             variant="outlined"
@@ -87,7 +87,7 @@ const Form: React.FC<Props> = () => {
                         </Button>
                     </Box>
                 </Box>
-                <Box mt={2}>
+                <Box mt={5.5}>
                     <TextField
                         inputRef={register}
                         label="Instrukce"
@@ -97,7 +97,7 @@ const Form: React.FC<Props> = () => {
                         fullWidth
                     />
                 </Box>
-                <Box mt={2}>
+                <Box mt={4.5}>
                     <TextField
                         inputRef={register}
                         label="Čas"
