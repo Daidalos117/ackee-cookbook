@@ -63,8 +63,11 @@ const Header: React.FC<Props> = ({ name, duration, score, isLoading }) => {
                                     />
                                 ) : (
                                     <Duration
-                                        color={theme.palette.secondary.contrastText}
+                                        color={
+                                            theme.palette.secondary.contrastText
+                                        }
                                         duration={duration || 0}
+                                        fontWeight={"bold"}
                                     />
                                 )}
                             </Box>
