@@ -7,6 +7,7 @@ import { RecipeWithBackendData as Recipe } from "general/types";
 import { StyledItem, ItemContent } from "./styled";
 import Duration from "components/Duration/Duration";
 import Loading from "../Loading/Loading";
+import recipeSmall from 'img/recipe_small.png';
 
 interface Props {
     onClick: (event: React.MouseEvent<HTMLDivElement>) => void;
@@ -21,16 +22,20 @@ const Item: React.FC<P> = ({ name, duration, score, onClick }) => {
         <StyledItem onClick={onClick}>
             <Box position="relative" width={96} height={96}>
                 <img
-                    src="https://picsum.photos/96/96"
+                    src={recipeSmall}
                     alt={name}
                     onLoad={() => setImgLoaded(true)}
                 />
                 {!imgLoaded && <Loading absolute />}
             </Box>
             <ItemContent>
-                <Typography variant="h6" className="heading">{name}</Typography>
+                <Typography variant="h6" className="heading">
+                    {name}
+                </Typography>
                 <Rating value={score} size="small" readOnly />
-                <Duration fontSize={15} duration={duration} />
+                <Box mt={2}>
+                    <Duration fontSize={15} duration={duration} />
+                </Box>
             </ItemContent>
         </StyledItem>
     );
