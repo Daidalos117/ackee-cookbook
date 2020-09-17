@@ -7,16 +7,19 @@ import Container from "@material-ui/core/Container";
 import Button from "@material-ui/core/Button/Button";
 import Box from "@material-ui/core/Box";
 import AddIcon from "@material-ui/icons/Add";
-
+import { yupResolver } from '@hookform/resolvers';
 import { useDispatch, useSelector } from "react-redux";
 
+import schema from './schema';
 import { submitRecipeRequest } from "actions/form";
-import { State } from "../../reducers";
+import { State } from "reducers";
 
 interface Props {}
 
 const Form: React.FC<Props> = () => {
-    const { register, handleSubmit, reset } = useForm();
+    const { register, handleSubmit, reset, errors } = useForm({
+      resolver: yupResolver(schema)
+    });
     const [ingredientsCount, setIngredientsCount] = useState<number>(1);
     const dispatch = useDispatch();
     const success = useSelector((state: State) => state.form.recipe.success);
@@ -38,6 +41,8 @@ const Form: React.FC<Props> = () => {
                         inputRef={register}
                         label="Název receptu"
                         name="name"
+                        helperText={errors.name?.message}
+                        error={errors.name?.message}
                         fullWidth
                     />
                 </Box>
@@ -46,6 +51,8 @@ const Form: React.FC<Props> = () => {
                         inputRef={register}
                         label="Úvodní text"
                         name="info"
+                        helperText={errors.info?.message}
+                        error={errors.info?.message}
                         fullWidth
                     />
                 </Box>
@@ -58,6 +65,8 @@ const Form: React.FC<Props> = () => {
                                 inputRef={register}
                                 label="Vaše ingredience"
                                 name={`ingredients[${key}]`}
+                                helperText={errors.ingredients && errors.ingredients[key].message}
+                                error={errors.ingredients && errors.ingredients[key].message}
                                 fullWidth
                             />
                         </Box>
@@ -68,6 +77,7 @@ const Form: React.FC<Props> = () => {
                             color="secondary"
                             variant="outlined"
                             size="small"
+
                             onClick={() =>
                                 setIngredientsCount(ingredientsCount + 1)
                             }
@@ -82,6 +92,8 @@ const Form: React.FC<Props> = () => {
                         inputRef={register}
                         label="Instrukce"
                         name="description"
+                        helperText={errors.description?.message}
+                        error={errors.description?.message}
                         fullWidth
                     />
                 </Box>
@@ -90,6 +102,8 @@ const Form: React.FC<Props> = () => {
                         inputRef={register}
                         label="Čas"
                         name="duration"
+                        helperText={errors.duration?.message}
+                        error={errors.duration?.message}
                         InputProps={{
                             endAdornment: (
                                 <InputAdornment position="end">
