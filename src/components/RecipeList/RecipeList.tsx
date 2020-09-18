@@ -7,6 +7,7 @@ import Dialog from "@material-ui/core/Dialog";
 import DialogActions from "@material-ui/core/DialogActions";
 import Button from "@material-ui/core/Button";
 import DialogTitle from "@material-ui/core/DialogTitle";
+import { Swipeable, EventData } from "react-swipeable";
 
 import { fetchRecipesRequest } from "actions/recipes";
 import { deleteRecipeRequested } from "actions/recipe";
@@ -16,7 +17,6 @@ import Loading from "components/Loading/Loading";
 import { RECIPES_DETAIL } from "routes/routes";
 import { useHistory } from "react-router";
 import { RecipeWithBackendData as Recipe } from "general/types";
-import { Swipeable, EventData } from "react-swipeable";
 
 interface Props {}
 
