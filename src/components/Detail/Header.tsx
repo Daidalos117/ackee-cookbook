@@ -47,7 +47,7 @@ const Header: React.FC<Props> = ({ name, duration, score, isLoading }) => {
                     <Layout marginTop={false}>
                         <Box display="flex" justifyContent="space-between">
                             <div>
-                                <Rating value={score} readOnly />
+                              {typeof score !== 'undefined' && <Rating value={score} readOnly />}
                             </div>
                             <Box
                                 textAlign="right"

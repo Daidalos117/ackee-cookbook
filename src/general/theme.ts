@@ -21,11 +21,7 @@ const myTheme = createMuiTheme({
     spacing: 10,
 
     overrides: {
-        MuiInput: {
-            input: {
-                //color: defaultTheme.palette.text.secondary
-            },
-        },
+        MuiInput: {},
         MuiFormLabel: {
             root: {
                 color: defaultTheme.palette.text.secondary,
@@ -34,6 +30,13 @@ const myTheme = createMuiTheme({
         MuiTypography: {
             body2: {
                 fontSize: "1rem",
+            },
+        },
+        MuiInputAdornment: {
+            root: {
+                "& p": {
+                    color: defaultTheme.palette.text.secondary,
+                },
             },
         },
     },

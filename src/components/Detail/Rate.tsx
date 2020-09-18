@@ -25,7 +25,7 @@ const Rate: React.FC<Props> = () => {
             <Rating
                 name="rating"
                 size="large"
-                value={value}
+                value={value || 0}
                 readOnly={!!value}
                 onChange={(e, value) =>
                     value && dispatch(rateRecipeRequest(id, value))
