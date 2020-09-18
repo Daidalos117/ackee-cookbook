@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# App for managing the coolest recipes.
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). You know the drill.
 
 ## Available Scripts
 
