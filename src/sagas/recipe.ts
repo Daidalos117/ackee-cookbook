@@ -1,5 +1,5 @@
 import { put, call } from "redux-saga/effects";
-import { RecipeActionTypes } from "../actions/recipe";
+import { DELETE_RECIPE_ERROR, RecipeActionTypes } from "actions/recipe";
 import api from "api/";
 
 import {
@@ -7,9 +7,10 @@ import {
     FETCH_RECIPE_SUCCESS,
     RATE_RECIPE_ERROR,
     RATE_RECIPE_SUCCESS,
-    RATE_LOAD_SUCCESS
-} from "../actions/recipe";
-import { RECIPE, RATE_RECIPE } from "../api/routes";
+    RATE_LOAD_SUCCESS,
+    DELETE_RECIPE_SUCCESS,
+} from "actions/recipe";
+import { RECIPE, RATE_RECIPE } from "api/routes";
 import { addRating, getRating } from "general/helpers";
 
 export function* fetchRecipe(action: RecipeActionTypes) {
@@ -21,9 +22,9 @@ export function* fetchRecipe(action: RecipeActionTypes) {
 
     try {
         const response = yield call(
-            url =>
+            (url) =>
                 api.get(url, {
-                    params: {}
+                    params: {},
                 }),
             RECIPE(id)
         );
@@ -48,12 +49,12 @@ export function* rateRecipe(action: RecipeActionTypes) {
 
     try {
         const response = yield call(
-            url =>
+            (url) =>
                 api.post(
                     url,
                     { score },
                     {
-                        params: {}
+                        params: {},
                     }
                 ),
             RATE_RECIPE(id)
@@ -63,7 +64,7 @@ export function* rateRecipe(action: RecipeActionTypes) {
 
         addRating({
             id,
-            score: serverScore
+            score: serverScore,
         });
 
         yield put({ type: RATE_RECIPE_SUCCESS, score: serverScore });
@@ -79,4 +80,29 @@ export function* loadRecipeRate(action: RecipeActionTypes) {
 
     const rating = getRating(action.id);
     yield put({ type: RATE_LOAD_SUCCESS, score: rating?.score });
+}
+
+export function* deleteRecipe(action: RecipeActionTypes) {
+    if (!("id" in action)) {
+        return put({
+            type: RATE_RECIPE_ERROR,
+            error: "Delete ID not provided",
+        });
+    }
+
+    const { id } = action;
+
+    try {
+        yield call(
+            (url) =>
+                api.delete(url, {
+                    params: {},
+                }),
+            RECIPE(id)
+        );
+
+        yield put({ type: DELETE_RECIPE_SUCCESS, id });
+    } catch (e) {
+        yield put({ type: DELETE_RECIPE_ERROR, error: e.message });
+    }
 }

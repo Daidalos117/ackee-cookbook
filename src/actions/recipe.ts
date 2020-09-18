@@ -1,4 +1,4 @@
-import { Recipes } from "../general/types";
+import { Recipes } from "general/types";
 
 export const FETCH_RECIPE_REQUESTED = "FETCH_RECIPE_REQUESTED";
 export const FETCH_RECIPE_SUCCESS = "FETCH_RECIPE_SUCCESS";
@@ -27,7 +27,7 @@ export type RecipeFetchActionTypes =
 
 export const fetchRecipeRequest = (id: string) => ({
     type: FETCH_RECIPE_REQUESTED,
-    id
+    id,
 });
 
 export const RATE_RECIPE_REQUESTED = "RATE_RECIPE_REQUESTED";
@@ -50,7 +50,7 @@ export type RateActionTypes = RateRequestAction | RateSuccessAction;
 export const rateRecipeRequest = (id: string, score: number) => ({
     type: RATE_RECIPE_REQUESTED,
     id,
-    score
+    score,
 });
 
 export const RATE_LOAD_REQUESTED = "RATE_LOAD_REQUESTED";
@@ -58,7 +58,7 @@ export const RATE_LOAD_SUCCESS = "RATE_LOAD_SUCCESS";
 
 export const rateLoadRequest = (id: string) => ({
     type: RATE_LOAD_REQUESTED,
-    id
+    id,
 });
 
 interface RateLoadRequestAction {
@@ -73,7 +73,37 @@ interface RateLoadSuccessAction {
 
 export type RateLoadActionTypes = RateLoadRequestAction | RateLoadSuccessAction;
 
+export const DELETE_RECIPE_REQUESTED = "DELETE_RECIPE_REQUESTED";
+export const DELETE_RECIPE_SUCCESS = "DELETE_RECIPE_SUCCESS";
+export const DELETE_RECIPE_ERROR = "DELETE_RECIPE_ERROR";
+
+export const deleteRecipeRequested = (id: string) => ({
+    type: DELETE_RECIPE_REQUESTED,
+    id,
+});
+
+interface DeleteRecipeRequestAction {
+    type: typeof DELETE_RECIPE_REQUESTED;
+    id: string;
+}
+
+interface DeleteRecipeSuccessAction {
+    type: typeof DELETE_RECIPE_SUCCESS;
+    id: string;
+}
+
+interface DeleteRecipeErrorAction {
+    type: typeof DELETE_RECIPE_ERROR;
+    id: string;
+}
+
+export type DeleteRecipeActionTypes =
+    | DeleteRecipeRequestAction
+    | DeleteRecipeSuccessAction
+    | DeleteRecipeErrorAction;
+
 export type RecipeActionTypes =
     | RecipeFetchActionTypes
     | RateActionTypes
-    | RateLoadActionTypes;
+    | RateLoadActionTypes
+    | DeleteRecipeActionTypes;

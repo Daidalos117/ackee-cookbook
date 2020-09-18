@@ -3,10 +3,10 @@ import {
     FETCH_RECIPE_SUCCESS,
     FETCH_RECIPE_ERROR,
     RATE_RECIPE_SUCCESS,
-    RATE_LOAD_SUCCESS
-} from "../actions/recipe";
-import { RecipeDetail } from "../general/types";
-import { RecipeActionTypes } from "../actions/recipe";
+    RATE_LOAD_SUCCESS,
+} from "actions/recipe";
+import { RecipeDetail } from "general/types";
+import { RecipeActionTypes } from "actions/recipe";
 
 export interface RecipeState {
     isLoading: boolean;
@@ -19,7 +19,7 @@ const initialState = {
     isLoading: false,
     error: "",
     data: {},
-    ownRating: null
+    ownRating: null,
 };
 
 export default (state = initialState, action: RecipeActionTypes) => {

@@ -1,6 +1,11 @@
-import { FETCH_RECIPES_SUCCESS, FETCH_RECIPES_ERROR, FETCH_RECIPES_REQUESTED } from '../actions/recipes';
-import { Recipes } from 'general/types';
-import { RecipesActionTypes } from '../actions/recipes';
+import {
+    FETCH_RECIPES_SUCCESS,
+    FETCH_RECIPES_ERROR,
+    FETCH_RECIPES_REQUESTED,
+} from "actions/recipes";
+import { Recipes, RecipeWithBackendData } from "general/types";
+import { RecipesActionTypes } from "actions/recipes";
+import { DELETE_RECIPE_SUCCESS, DeleteRecipeActionTypes } from "actions/recipe";
 
 export interface RecipesState {
     isLoading: boolean;
@@ -12,13 +17,16 @@ export interface RecipesState {
 
 const initialState = {
     isLoading: false,
-    error: '',
+    error: "",
     data: [],
     page: 0,
-    hasMore: true
+    hasMore: true,
 };
 
-export default (state = initialState, action: RecipesActionTypes) => {
+export default (
+    state = initialState,
+    action: RecipesActionTypes | DeleteRecipeActionTypes
+) => {
     switch (action.type) {
         case FETCH_RECIPES_REQUESTED:
             return { ...state, isLoading: true };
@@ -28,10 +36,17 @@ export default (state = initialState, action: RecipesActionTypes) => {
                 data: [...state.data, ...action.data],
                 isLoading: false,
                 page: state.page + 1,
-                hasMore: action.hasMore
+                hasMore: action.hasMore,
             };
         case FETCH_RECIPES_ERROR:
             return { ...state, error: action.error, isLoading: false };
+        case DELETE_RECIPE_SUCCESS:
+            return {
+                ...state,
+                data: state.data.filter(
+                    (recipe: RecipeWithBackendData) => recipe.id !== action.id
+                ),
+            };
         default:
             return state;
     }
