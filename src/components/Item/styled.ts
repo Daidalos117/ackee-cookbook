@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Theme } from "@material-ui/core";
 
 export const StyledItem = styled.div`
-${({ theme }: { theme: Theme }) => `
+    ${({ theme }: { theme: Theme }) => `
   display: flex;
   padding-top: 25px;
   padding-bottom: 25px;

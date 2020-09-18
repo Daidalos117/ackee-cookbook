@@ -2,41 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2ccbb72-d8a4-4313-8478-07607eca16da" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/form.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/form.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/recipes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/recipes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Detail/Content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Detail/Content.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Detail/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Detail/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Detail/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Detail/styled.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Duration/Duration.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Duration/Duration.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Item/Item.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Item/Item.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Item/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Item/styled.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/Layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Loading/Loading.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Loading/Loading.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MenuBar/MenuBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MenuBar/MenuBar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/New/Form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/New/Form.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/New/schema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/New/schema.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/New/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/New/styled.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RecipeList/RecipeList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RecipeList/RecipeList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Detail/Rate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Detail/Rate.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/general/theme.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/general/theme.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/general/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/general/types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/general/yup.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/general/yup.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Recipes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Recipes.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/form.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/form.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sagas/form.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/sagas/form.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sagas/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/sagas/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sagas/recipe.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/sagas/recipe.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sagas/recipes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/sagas/recipes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serviceWorker.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/serviceWorker.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,14 +26,65 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/general/theme.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="32" column="14" lean-forward="true" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Detail/Content.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1118">
+              <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Item/styled.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+            <state relative-caret-position="223">
+              <caret line="44" column="8" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/Detail/Header.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="401">
+              <caret line="58" column="46" lean-forward="true" selection-start-line="58" selection-start-column="46" selection-end-line="58" selection-end-column="46" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/New/Form.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="155">
+              <caret line="113" column="47" selection-start-line="113" selection-start-column="33" selection-end-line="113" selection-end-column="47" />
+              <folding>
+                <element signature="e#0#51#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Detail/Rate.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="258">
+              <caret line="23" column="77" selection-start-line="23" selection-start-column="77" selection-end-line="23" selection-end-column="77" />
             </state>
           </provider>
         </entry>
@@ -110,7 +129,6 @@
         <option value="$PROJECT_DIR$/src/general/recipes.ts" />
         <option value="$PROJECT_DIR$/src/general/helpers.ts" />
         <option value="$PROJECT_DIR$/src/components/RecipeList.tsx" />
-        <option value="$PROJECT_DIR$/src/components/Detail/Rate.tsx" />
         <option value="$PROJECT_DIR$/src/routes/routes.ts" />
         <option value="$PROJECT_DIR$/src/routes/index.tsx" />
         <option value="$PROJECT_DIR$/src/general/types.ts" />
@@ -133,8 +151,6 @@
         <option value="$PROJECT_DIR$/src/general/yup.ts" />
         <option value="$PROJECT_DIR$/src/components/Detail/Content.tsx" />
         <option value="$PROJECT_DIR$/src/components/New/styled.ts" />
-        <option value="$PROJECT_DIR$/src/general/theme.ts" />
-        <option value="$PROJECT_DIR$/src/components/New/Form.tsx" />
         <option value="$PROJECT_DIR$/src/components/Duration/Duration.tsx" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/actions/recipes.ts" />
@@ -147,11 +163,14 @@
         <option value="$PROJECT_DIR$/src/actions/recipe.ts" />
         <option value="$PROJECT_DIR$/src/reducers/recipes.ts" />
         <option value="$PROJECT_DIR$/src/reducers/recipe.ts" />
-        <option value="$PROJECT_DIR$/src/components/Detail/Header.tsx" />
         <option value="$PROJECT_DIR$/src/components/Item/Item.tsx" />
         <option value="$PROJECT_DIR$/src/sagas/recipe.ts" />
         <option value="$PROJECT_DIR$/src/components/Detail/styled.ts" />
         <option value="$PROJECT_DIR$/src/components/Item/styled.ts" />
+        <option value="$PROJECT_DIR$/src/components/New/Form.tsx" />
+        <option value="$PROJECT_DIR$/src/general/theme.ts" />
+        <option value="$PROJECT_DIR$/src/components/Detail/Rate.tsx" />
+        <option value="$PROJECT_DIR$/src/components/Detail/Header.tsx" />
       </list>
     </option>
   </component>
@@ -225,6 +244,47 @@
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="Layout" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ackee-cookbook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ackee-cookbook" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Loading" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ackee-cookbook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ackee-cookbook" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="MenuBar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ackee-cookbook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ackee-cookbook" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="New" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ackee-cookbook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ackee-cookbook" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="RecipeList" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ackee-cookbook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ackee-cookbook" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Snackbar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ackee-cookbook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ackee-cookbook" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="general" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -233,7 +293,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="Item&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/components/Item/Item.tsx&#10;Head&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/components/Detail/Header.tsx&#10;EventTarget&#9;null&#9;null&#10;layou&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/components/Layout/Layout.tsx&#10;index.h&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/public/index.html&#10;index&#9;FILE&#9;file:///usr/local/lib/node_modules/prettier/index.js&#10;duration&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/components/Duration/Duration.tsx&#10;them&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/general/theme.ts&#10;Reci&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/pages/RecipeNew.tsx&#10;Rec&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/pages/RecipeDetail.tsx&#10;Recipe&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/pages/RecipeNew.tsx&#10;Detail/styled.&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/components/Detail/styled.ts&#10;styled&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/components/Layout/styled.ts&#10;Header&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/components/Detail/Header.tsx&#10;Heade&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/components/Detail/Header.tsx&#10;theme&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/general/theme.ts&#10;reduc&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/reducers&#10;form&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/sagas/form.ts&#10;Snackbar/Snackbar.tsx&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/components/Snackbar/Snackbar.tsx&#10;Detail/Content.t&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/components/Detail/Content.tsx&#10;New/Form.tsx&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/components/New/Form.tsx&#10;Loadin&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/components/Loading/Loading.tsx&#10;Menu&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/components/MenuBar/MenuBar.tsx&#10;App&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/components/App.tsx&#10;Theme&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/general/theme.ts&#10;rec&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/components/RecipeList.tsx&#10;Marged&#9;null&#9;null&#10;StyledCont&#9;null&#9;null&#10;AxiosReq&#9;null&#9;null&#10;Sa&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/sagas&#10;/routes/index.tsx&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/routes/index.tsx&#10;reducers/index&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/reducers/index.ts" />
+    <property name="SearchEverywhereHistoryKey" value="theme&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/node_modules/@material-ui/core/styles/createMuiTheme.d.ts&#10;Item&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/components/Item/Item.tsx&#10;Head&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/components/Detail/Header.tsx&#10;EventTarget&#9;null&#9;null&#10;layou&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/components/Layout/Layout.tsx&#10;index.h&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/public/index.html&#10;index&#9;FILE&#9;file:///usr/local/lib/node_modules/prettier/index.js&#10;duration&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/components/Duration/Duration.tsx&#10;them&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/general/theme.ts&#10;Reci&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/pages/RecipeNew.tsx&#10;Rec&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/pages/RecipeDetail.tsx&#10;Recipe&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/pages/RecipeNew.tsx&#10;Detail/styled.&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/components/Detail/styled.ts&#10;styled&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/components/Layout/styled.ts&#10;Header&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/components/Detail/Header.tsx&#10;Heade&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/components/Detail/Header.tsx&#10;reduc&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/reducers&#10;form&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/sagas/form.ts&#10;Snackbar/Snackbar.tsx&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/components/Snackbar/Snackbar.tsx&#10;Detail/Content.t&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/components/Detail/Content.tsx&#10;New/Form.tsx&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/components/New/Form.tsx&#10;Loadin&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/components/Loading/Loading.tsx&#10;Menu&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/components/MenuBar/MenuBar.tsx&#10;App&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/components/App.tsx&#10;Theme&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/general/theme.ts&#10;rec&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/components/RecipeList.tsx&#10;Marged&#9;null&#9;null&#10;StyledCont&#9;null&#9;null&#10;AxiosReq&#9;null&#9;null&#10;Sa&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/sagas&#10;/routes/index.tsx&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/routes/index.tsx&#10;reducers/index&#9;FILE&#9;file:///Users/rajchert/Documents/WebServer_Local/ackee-cookbook/src/reducers/index.ts" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -285,7 +345,7 @@
       <workItem from="1600248371286" duration="2578000" />
       <workItem from="1600272604533" duration="14096000" />
       <workItem from="1600360103983" duration="9704000" />
-      <workItem from="1600448408194" duration="3383000" />
+      <workItem from="1600448408194" duration="3925000" />
     </task>
     <task id="LOCAL-00001" summary="Connect Redux and Sagas">
       <created>1600099189961</created>
@@ -567,11 +627,25 @@
       <option name="project" value="LOCAL" />
       <updated>1600455021961</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Code formating">
+      <created>1600455314345</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1600455314345</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Fix controlled vs uncntrolled error">
+      <created>1600455757022</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1600455757022</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63755000" />
+    <option name="totallyTimeSpent" value="64297000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -595,7 +669,7 @@
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.3280098" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="14" visible="true" weight="0.33046684" />
+      <window_info anchor="bottom" id="Version Control" order="14" visible="true" weight="0.3308733" />
       <window_info anchor="bottom" id="Messages" order="15" weight="0.32923833" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -663,8 +737,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Basic recipe detail header" />
-    <MESSAGE value="Recipe heading design" />
     <MESSAGE value="Content component" />
     <MESSAGE value="Header design fixes" />
     <MESSAGE value="Type fixes" />
@@ -688,7 +760,9 @@
     <MESSAGE value="Design changes" />
     <MESSAGE value="Add transient styled component prop" />
     <MESSAGE value="Delete recipe" />
-    <option name="LAST_COMMIT_MESSAGE" value="Delete recipe" />
+    <MESSAGE value="Code formating" />
+    <MESSAGE value="Fix controlled vs uncntrolled error" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix controlled vs uncntrolled error" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/general/helpers.ts">
@@ -719,6 +793,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="389">
           <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -804,13 +881,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Detail/Rate.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tsconfig.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="356">
@@ -833,29 +903,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Detail/Content.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/RecipeDetail.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="48" column="17" lean-forward="true" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/New/Form.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1130">
-          <caret line="58" column="28" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -867,13 +920,6 @@
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/general/theme.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
@@ -908,13 +954,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@material-ui/core/styles/createMuiTheme.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="39" column="14" lean-forward="true" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -1023,13 +1062,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Detail/Header.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/reducers/recipe.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -1067,16 +1099,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/New/styled.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Detail/styled.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
@@ -1097,12 +1119,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Item/styled.ts">
+    <entry file="file://$PROJECT_DIR$/src/components/New/styled.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+        <state relative-caret-position="184">
+          <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Item/styled.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="44" column="8" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@material-ui/core/styles/createMuiTheme.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="39" column="14" lean-forward="true" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/New/Form.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="113" column="47" selection-start-line="113" selection-start-column="33" selection-end-line="113" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/general/theme.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="32" column="14" lean-forward="true" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Detail/Content.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1118">
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Detail/Rate.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="23" column="77" selection-start-line="23" selection-start-column="77" selection-end-line="23" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Detail/Header.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="58" column="46" lean-forward="true" selection-start-line="58" selection-start-column="46" selection-end-line="58" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
