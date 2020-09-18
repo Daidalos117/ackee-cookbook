@@ -5,11 +5,10 @@ import AddIcon from "@material-ui/icons/Add";
 import Box from "@material-ui/core/Box";
 import { Link } from "react-router-dom";
 
-import { RECIPES_NEW } from "../routes/routes";
+import { RECIPES_NEW } from "routes/routes";
 import RecipeList from "components/RecipeList/RecipeList";
 import MenuBar from "components/MenuBar/MenuBar";
 import Layout from "components/Layout/Layout";
-
 
 interface Props {}
 

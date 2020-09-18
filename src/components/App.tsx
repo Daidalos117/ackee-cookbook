@@ -14,7 +14,7 @@ const App = () => (
             <ThemeProvider theme={myTheme}>
                 <CssBaseline />
                 <StylesProvider injectFirst>
-                    <Router >
+                    <Router>
                         <Routes />
                     </Router>
                 </StylesProvider>

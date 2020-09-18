@@ -19,7 +19,6 @@ export function* fetchRecipe(action: RecipeActionTypes) {
     }
 
     const { id } = action;
-
     try {
         const response = yield call(
             (url) =>
@@ -46,7 +45,6 @@ export function* rateRecipe(action: RecipeActionTypes) {
     }
 
     const { id, score } = action;
-
     try {
         const response = yield call(
             (url) =>
@@ -91,7 +89,6 @@ export function* deleteRecipe(action: RecipeActionTypes) {
     }
 
     const { id } = action;
-
     try {
         yield call(
             (url) =>

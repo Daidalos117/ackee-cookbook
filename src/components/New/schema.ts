@@ -8,7 +8,7 @@ let schema = object().shape({
         .required(),
     info: string().required(),
     duration: number().required(),
-    description: string().required()
+    description: string().required(),
 });
 
 export default schema;

@@ -6,10 +6,10 @@ import Container from "@material-ui/core/Container";
 import Button from "@material-ui/core/Button/Button";
 import Box from "@material-ui/core/Box";
 import AddIcon from "@material-ui/icons/Add";
-import { yupResolver } from '@hookform/resolvers';
+import { yupResolver } from "@hookform/resolvers";
 import { useDispatch, useSelector } from "react-redux";
 
-import schema from './schema';
+import schema from "./schema";
 import { submitRecipeRequest } from "actions/form";
 import { State } from "reducers";
 import { StyledHeading } from "./styled";
@@ -18,7 +18,7 @@ interface Props {}
 
 const Form: React.FC<Props> = () => {
     const { register, handleSubmit, reset, errors } = useForm({
-      resolver: yupResolver(schema)
+        resolver: yupResolver(schema),
     });
     const [ingredientsCount, setIngredientsCount] = useState<number>(1);
     const dispatch = useDispatch();
@@ -59,14 +59,20 @@ const Form: React.FC<Props> = () => {
                 <Box mt={4.5}>
                     <StyledHeading variant="h5">Ingredience</StyledHeading>
 
-                    {[...Array(ingredientsCount).keys()].map(key => (
+                    {[...Array(ingredientsCount).keys()].map((key) => (
                         <Box mt={1} key={key}>
                             <TextField
                                 inputRef={register}
                                 label="Vaše ingredience"
                                 name={`ingredients[${key}]`}
-                                helperText={errors.ingredients && errors.ingredients[key].message}
-                                error={errors.ingredients && errors.ingredients[key].message}
+                                helperText={
+                                    errors.ingredients &&
+                                    errors.ingredients[key].message
+                                }
+                                error={
+                                    errors.ingredients &&
+                                    errors.ingredients[key].message
+                                }
                                 fullWidth
                             />
                         </Box>
@@ -77,7 +83,6 @@ const Form: React.FC<Props> = () => {
                             color="secondary"
                             variant="outlined"
                             size="small"
-
                             onClick={() =>
                                 setIngredientsCount(ingredientsCount + 1)
                             }
@@ -109,7 +114,7 @@ const Form: React.FC<Props> = () => {
                                 <InputAdornment position="end">
                                     min.
                                 </InputAdornment>
-                            )
+                            ),
                         }}
                     />
                 </Box>

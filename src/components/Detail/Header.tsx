@@ -6,7 +6,7 @@ import Rating from "@material-ui/lab/Rating";
 import Skeleton from "@material-ui/lab/Skeleton";
 import useTheme from "@material-ui/core/styles/useTheme";
 
-import Duration from "../Duration/Duration";
+import Duration from "components/Duration/Duration";
 import headerBg from "img/recipe_big.png";
 import Layout from "components/Layout/Layout";
 

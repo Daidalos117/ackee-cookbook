@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Theme } from "@material-ui/core";
 
 export const StyledItem = styled.div`
-    ${({ theme }: { theme: Theme }) => `
+${({ theme }: { theme: Theme }) => `
   display: flex;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -11,18 +11,16 @@ export const StyledItem = styled.div`
   
   @media (min-width: 768px) 
   {
-    padding-right: ${theme.spacing() * 1}px;
-    padding-left: ${theme.spacing() * 1}px;
+      padding-right: ${theme.spacing() * 1}px;
+      padding-left: ${theme.spacing() * 1}px;
   }
 
   
   &:hover {
-    background-color: ${theme.palette.grey["100"]} ;
-    cursor: pointer;
+      background-color: ${theme.palette.grey["100"]} ;
+      cursor: pointer;
   }
   
-  .heading {
-
  `}
 `;
 
@@ -32,19 +30,19 @@ export const ItemContent = styled.div`
     flex: 1;
 
     .heading {
-      word-break: break-all;
-      color: ${theme.palette.primary.main};
-      font-size: 1.062rem;
-      font-weight: bold;
+        word-break: break-all;
+        color: ${theme.palette.primary.main};
+        font-size: 1.062rem;
+        font-weight: bold;
     }
     
     
     .MuiRating-iconFilled {
-      color: ${theme.palette.secondary.main};
+        color: ${theme.palette.secondary.main};
     }
 
     .MuiRating-iconEmpty {
-      display: none;
+        display: none;
     }
  `}
 `;

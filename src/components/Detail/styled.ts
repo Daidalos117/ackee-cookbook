@@ -34,16 +34,8 @@ export const Header = styled.header`
         padding: 20px 0;
         background-color: ${(theme as Theme).palette.secondary.main};
     }
-
-    .MuiRating-iconFilled {
-    }
-
-    .MuiRating-iconEmpty {
-    }
-    
 `}
 `;
-
 
 export const StyledSection = styled.section`
     margin-top: 30px;
@@ -69,12 +61,12 @@ export const StyledRateBar = styled.div`
     }
 
     .MuiRating-icon svg {
-      width: 50px;
-      height: 50px;
+        width: 50px;
+        height: 50px;
     }
 
     .MuiRating-iconFilled {
-        color: ${({ theme }) => theme.palette.text.secondary}; 
+        color: ${({ theme }) => theme.palette.text.secondary};
     }
 
     .MuiRating-iconEmpty {
@@ -83,13 +75,11 @@ export const StyledRateBar = styled.div`
 `;
 
 export const StyledList = styled(List)`
-  padding-left: 30px;
-  list-style: disc;
-  
-  li {
-    display: list-item;
-    padding: 5px 0;
-  }
-`
+    padding-left: 30px;
+    list-style: disc;
 
-
+    li {
+        display: list-item;
+        padding: 5px 0;
+    }
+`;

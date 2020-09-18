@@ -1,4 +1,4 @@
-import { NewRecipe } from "../general/types";
+import { NewRecipe } from "general/types";
 
 export const SUBMIT_RECIPE_REQUESTED = "SUBMIT_RECIPE_REQUESTED";
 export const SUBMIT_RECIPE_SUCCESS = "SUBMIT_RECIPE_SUCCESS";
@@ -38,15 +38,15 @@ export type RecipeFormActions = RecipeSubmitActions;
 
 export const submitRecipeRequest = (payload: Partial<NewRecipe>) => ({
     type: SUBMIT_RECIPE_REQUESTED,
-    payload
+    payload,
 });
 
 export const resetRecipeError = () => ({
-    type: SUBMIT_RECIPE_ERROR_RESET
+    type: SUBMIT_RECIPE_ERROR_RESET,
 });
 
 export const resetRecipeSuccess = () => ({
-  type: SUBMIT_RECIPE_SUCCESS_RESET
-})
+    type: SUBMIT_RECIPE_SUCCESS_RESET,
+});
 
 export type FormActions = RecipeFormActions;

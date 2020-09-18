@@ -12,7 +12,7 @@ const absoluteStyles = {
     top: 0,
     zIndex: 2,
     width: "100%",
-    height: "100%"
+    height: "100%",
 };
 
 const Loading: React.FC<BoxProps & Props> = ({ absolute, ...boxProps }) => (

@@ -8,7 +8,7 @@ import { RECIPES, RECIPES_DETAIL, RECIPES_NEW } from "./routes";
 
 interface Props {}
 
-const Component: React.FC<Props> = props => (
+const Component: React.FC<Props> = (props) => (
     <Switch>
         <Route path="/" render={() => <Redirect to={RECIPES} />} exact />
         <Route path={RECIPES} exact>

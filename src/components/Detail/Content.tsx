@@ -15,7 +15,7 @@ const Content: React.FC<Props & RecipeContent> = ({
     info,
     description,
     ingredients,
-    isLoading
+    isLoading,
 }) => (
     <>
         <Layout>
@@ -44,7 +44,7 @@ const Content: React.FC<Props & RecipeContent> = ({
                         />
                     ) : (
                         ingredients &&
-                        ingredients.map(ingredient => (
+                        ingredients.map((ingredient) => (
                             <ListItem key={ingredient}>{ingredient}</ListItem>
                         ))
                     )}

@@ -6,8 +6,8 @@ import Rating from "@material-ui/lab/Rating";
 import { RecipeWithBackendData as Recipe } from "general/types";
 import { StyledItem, ItemContent } from "./styled";
 import Duration from "components/Duration/Duration";
-import Loading from "../Loading/Loading";
-import recipeSmall from 'img/recipe_small.png';
+import Loading from "components/Loading/Loading";
+import recipeSmall from "img/recipe_small.png";
 
 interface Props {
     onClick: (event: React.MouseEvent<HTMLDivElement>) => void;

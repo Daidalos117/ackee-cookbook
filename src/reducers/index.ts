@@ -12,7 +12,7 @@ export type State = {
 const rootReducer = combineReducers({
     recipes,
     recipe,
-    form
+    form,
 });
 
 export default rootReducer;

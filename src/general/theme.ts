@@ -8,14 +8,14 @@ const defaultTheme = createMuiTheme();
 const myTheme = createMuiTheme({
     palette: {
         primary: {
-            main: COLOR_PRIMARY
+            main: COLOR_PRIMARY,
         },
         secondary: {
-            main: COLOR_SECONDARY
+            main: COLOR_SECONDARY,
         },
         text: {
-            secondary: "white"
-        }
+            secondary: "white",
+        },
     },
     typography: {},
     spacing: 10,
@@ -24,19 +24,19 @@ const myTheme = createMuiTheme({
         MuiInput: {
             input: {
                 //color: defaultTheme.palette.text.secondary
-            }
+            },
         },
         MuiFormLabel: {
             root: {
-                color: defaultTheme.palette.text.secondary
-            }
+                color: defaultTheme.palette.text.secondary,
+            },
         },
         MuiTypography: {
             body2: {
-                fontSize: "1rem"
-            }
-        }
-    }
+                fontSize: "1rem",
+            },
+        },
+    },
 });
 
 export default myTheme;

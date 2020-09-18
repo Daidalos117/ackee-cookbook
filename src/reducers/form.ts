@@ -4,8 +4,8 @@ import {
     SUBMIT_RECIPE_SUCCESS,
     SUBMIT_RECIPE_ERROR,
     SUBMIT_RECIPE_ERROR_RESET,
-    SUBMIT_RECIPE_SUCCESS_RESET
-} from "../actions/form";
+    SUBMIT_RECIPE_SUCCESS_RESET,
+} from "actions/form";
 
 export interface FormState {
     recipe: RecipeState;
@@ -20,11 +20,11 @@ export interface RecipeState {
 const recipeInitialState = {
     isSubmitting: false,
     error: "",
-    success: false
+    success: false,
 };
 
 const initialState = {
-    recipe: recipeInitialState
+    recipe: recipeInitialState,
 };
 
 export default (state = initialState, action: FormActions) => {
@@ -32,7 +32,7 @@ export default (state = initialState, action: FormActions) => {
         case SUBMIT_RECIPE_REQUESTED:
             return {
                 ...state,
-                recipe: { ...state.recipe, isSubmitting: true }
+                recipe: { ...state.recipe, isSubmitting: true },
             };
         case SUBMIT_RECIPE_SUCCESS:
             return {
@@ -40,8 +40,8 @@ export default (state = initialState, action: FormActions) => {
                 recipe: {
                     isSubmitting: false,
                     error: "",
-                    success: true
-                }
+                    success: true,
+                },
             };
         case SUBMIT_RECIPE_ERROR:
             return {
@@ -49,24 +49,24 @@ export default (state = initialState, action: FormActions) => {
                 recipe: {
                     ...state.recipe,
                     isSubmitting: false,
-                    error: action.error
-                }
+                    error: action.error,
+                },
             };
         case SUBMIT_RECIPE_ERROR_RESET:
             return {
                 ...state,
                 recipe: {
                     ...state.recipe,
-                    error: ""
-                }
+                    error: "",
+                },
             };
         case SUBMIT_RECIPE_SUCCESS_RESET:
             return {
                 ...state,
                 recipe: {
                     ...state.recipe,
-                    success: false
-                }
+                    success: false,
+                },
             };
         default:
             return state;

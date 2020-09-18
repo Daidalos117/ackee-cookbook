@@ -13,9 +13,13 @@ const Component: React.FC<Props> = ({
     fontSize,
     duration,
     color,
-    fontWeight
+    fontWeight,
 }) => (
-    <Box fontSize={fontSize || "14px"} color={color || "primary"} fontWeight={fontWeight || 'normal'}>
+    <Box
+        fontSize={fontSize || "14px"}
+        color={color || "primary"}
+        fontWeight={fontWeight || "normal"}
+    >
         <Schedule fontSize="inherit" />
         {` ${duration} min.`}
     </Box>

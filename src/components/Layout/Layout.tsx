@@ -7,7 +7,9 @@ interface Props {
 }
 
 const Layout: React.FC<Props> = ({ children, marginTop }) => (
-    <StyledContainer $marginTop={typeof marginTop !=='undefined' ? marginTop : true}>
+    <StyledContainer
+        $marginTop={typeof marginTop !== "undefined" ? marginTop : true}
+    >
         <Container>{children || "Nothing to see here :("}</Container>
     </StyledContainer>
 );
