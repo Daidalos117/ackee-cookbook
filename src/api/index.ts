@@ -1,5 +1,5 @@
 import axios from "axios";
-const baseURL = "https://cookbook.ack.ee/api/v1/";
+const baseURL = process.env.REACT_APP_API_BASE_URL;
 
 export default axios.create({
     baseURL,
