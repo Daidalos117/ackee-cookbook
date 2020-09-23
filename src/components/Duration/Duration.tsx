@@ -9,7 +9,7 @@ interface Props {
     fontWeight?: "bold" | "normal" | "light";
 }
 
-const Component: React.FC<Props> = ({
+const Duration: React.FC<Props> = ({
     fontSize,
     duration,
     color,
@@ -25,4 +25,4 @@ const Component: React.FC<Props> = ({
     </Box>
 );
 
-export default Component;
+export default Duration;
