@@ -10,7 +10,7 @@ import Loading from "components/Loading/Loading";
 import recipeSmall from "img/recipe_small.png";
 
 interface Props {
-    onClick: (event: React.MouseEvent<HTMLDivElement>) => void;
+    onClick?: (event: React.MouseEvent<HTMLDivElement>) => void;
 }
 
 type P = Props & Recipe;

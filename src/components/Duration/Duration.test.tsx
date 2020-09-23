@@ -10,6 +10,6 @@ test("renders Duration", async () => {
     const time = 100;
     const rendered: RenderResult = render(<Duration duration={time} />);
 
-    expect(rendered.getByTitle("duration")).toHaveTextContent(time);
+    expect(rendered.getByTitle("duration")).toHaveTextContent(`${time}`);
     expect(rendered.getByTitle("duration")).toBeValid();
 });

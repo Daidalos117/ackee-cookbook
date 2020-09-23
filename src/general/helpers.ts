@@ -1,3 +1,5 @@
+import {createMuiTheme, Theme} from "@material-ui/core";
+
 export interface Rating {
     score: number;
     id: string;
@@ -22,3 +24,5 @@ export const addRating = (rating: Rating) => {
     ratings[rating.id] = rating;
     return saveRatings(ratings);
 };
+
+export const getTheme = (theme?: Theme): Theme => theme || (createMuiTheme());

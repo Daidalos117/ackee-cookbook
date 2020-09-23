@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { Theme } from "@material-ui/core";
+import {getTheme} from "general/helpers";
+
 
 export const StyledItem = styled.div`
     ${({ theme }: { theme: Theme }) => `
@@ -11,13 +13,13 @@ export const StyledItem = styled.div`
   
   @media (min-width: 768px) 
   {
-      padding-right: ${theme.spacing() * 1}px;
-      padding-left: ${theme.spacing() * 1}px;
+      padding-right: ${getTheme(theme).spacing()}px;
+      padding-left: ${getTheme(theme).spacing()}px;
   }
 
   
   &:hover {
-      background-color: ${theme.palette.grey["100"]} ;
+      background-color: ${getTheme(theme).palette.grey["100"]} ;
       cursor: pointer;
   }
   
