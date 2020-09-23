@@ -5,7 +5,7 @@ import { StylesProvider } from "@material-ui/core/styles";
 import { ThemeProvider } from "styled-components";
 import { ThemeProvider as MuiThemeProvider } from "@material-ui/core";
 
-import Routes from "routes/";
+import Routes from "routes/index";
 import myTheme from "general/theme";
 
 const App = () => (

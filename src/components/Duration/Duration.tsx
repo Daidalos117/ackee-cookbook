@@ -5,7 +5,7 @@ import Box from "@material-ui/core/Box";
 interface Props {
     fontSize?: string | number;
     color?: string;
-    duration: number;
+    duration: number | string;
     fontWeight?: "bold" | "normal" | "light";
 }
 
@@ -19,6 +19,7 @@ const Duration: React.FC<Props> = ({
         fontSize={fontSize || "14px"}
         color={color || "primary"}
         fontWeight={fontWeight || "normal"}
+        title="duration"
     >
         <Schedule fontSize="inherit" />
         {` ${duration} min.`}
